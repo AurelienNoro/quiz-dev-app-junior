@@ -54,8 +54,7 @@ startBtn.addEventListener('click', () => {
     return;
   }
 
-  QUESTIONS = shuffle(pool).slice(0, 15
- );
+  QUESTIONS = shuffle(pool).slice(0, 15);
   currentIndex = 0;
   score = 0;
 
@@ -242,3 +241,4 @@ saveScoreBtn.addEventListener('click', () => {
   localStorage.setItem(LB_KEY, JSON.stringify(lb));
   alert('Score enregistré !');
 });
+
