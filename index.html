@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz — Developpeur d'application junior</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="app-header">
+  <div class="logo">Q-TA</div>
+  <div class="header-left">
+<div class="title-group">
+  <h1 class="main-title">Quiz Dev App Junior</h1>
+</div>
+  </div>
+</header>
+  <!-- Présentation du quiz -->
+  <section class="card presentation" id="presentation">
+<h2>Bienvenue dans le Quiz 🎯</h2>
+
+  <ul class="presentation-list">
+    <li>📘 QCM avec une seule bonne réponse</li>
+    <li>🧠 Jusqu’à 20 questions par quiz</li>
+    <li>⏱️ Temps limité par question</li>
+  </ul>
+
+  <p class="presentation-footer">Bonne chance 🚀</p>
+</section>
+
+
+  <section class="card">
+    <div class="form-group">
+      <label for="themeSelect">Choisir un thème :</label>
+      <select id="themeSelect">
+        <option value="all">Tous</option>
+      </select>
+    </div>
+    <button class="btn" id="startBtn">Démarrer le quiz</button>
+  </section>
+
+  <section id="quizArea" class="card" style="display:none;">
+    <div class="progress-bar">
+      <div id="progress">Question 1 / 1</div>
+      <div id="themeLabel">Thème: Tous</div>
+      <div>Score: <span id="scoreBox">0</span></div>
+      <div class="timer" id="timerBox">20s</div>
+    </div>
+    <div id="questionBox"></div>
+    <div id="choicesBox"></div>
+    <div id="explanationBox" style="margin-top:8px; font-size:0.9em; color:#aaa;"></div>
+    <div style="margin-top:12px;">
+      <button class="btn" id="nextBtn">Valider / Suivant</button>
+    </div>
+  </section>
+
+  <section id="resultArea" class="card" style="display:none;">
+    <h3>Résultat</h3>
+    <div id="resultSummary"></div>
+    <div style="margin-top:10px">
+      <label>Pseudo : <input type="text" id="playerName" placeholder="Ton nom"/></label>
+      <button class="btn" id="saveScoreBtn">Enregistrer score</button>
+    </div>
+    <div style="margin-top:12px;"><a href="leaderboard.html">Voir les meilleurs scores</a></div>
+	<div style="margin-top:16px;">
+  <h3>Récapitulatif des réponses</h3>
+  <div id="recapBox"></div>
+</div>
+  </section>
+</div>
+<script src="quiz.js"></script>
+</body>
+</html>

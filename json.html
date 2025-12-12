@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gestion JSON — Quiz</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  body { font-family: sans-serif; background:#0b0c17; color:#eee; }
+  .wrap { max-width:900px; margin:auto; padding:20px; }
+  header { display:flex; align-items:center; justify-content:space-between; margin-bottom:20px; }
+  header h1 { font-size:1.5rem; margin:0; }
+  .logo { font-weight:bold; font-size:1.5rem; }
+  .panel { background:#1a1b29; padding:16px; border-radius:12px; margin-bottom:16px; }
+  .panel h3 { margin-top:0; margin-bottom:12px; font-size:1.2rem; }
+  .btn, .ghost { cursor:pointer; border:none; border-radius:8px; padding:8px 12px; font-size:1rem; }
+  .btn { background:#4e9af1; color:#fff; }
+  .ghost { background:#333; color:#eee; }
+  input[type="file"] { width:100%; padding:4px; border-radius:8px; border:none; background:#222; color:#eee; }
+  .controls { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:8px; }
+  @media (max-width:600px) { .controls { flex-direction:column; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">Q-TA</div>
+    <h1>Gestion JSON — Quiz</h1>
+  </header>
+
+  <!-- Bouton retour quiz -->
+  <div style="margin-bottom:16px;">
+    <a href="quiz.html" class="btn">Retour au Quiz</a>
+  </div>
+
+  <div class="panel">
+    <h3>Gestion de la base de questions</h3>
+    <div class="controls">
+      <button class="btn" id="resetDBBtn">Réinitialiser la base</button>
+      <button class="ghost" id="exportBtn">Exporter JSON</button>
+      <input type="file" id="importFile" accept=".json">
+    </div>
+    <div style="margin-top:8px; font-size:0.9rem; color:#aaa;">
+      Importer un fichier JSON remplace entièrement la base actuelle.
+    </div>
+  </div>
+
+  <div class="panel">
+    <h3>Leaderboard</h3>
+    <button class="btn" id="resetLBBtn">Réinitialiser le leaderboard</button>
+    <div style="margin-top:8px; font-size:0.9rem; color:#aaa;">
+      Supprime tous les scores enregistrés.
+    </div>
+  </div>
+</div>
+
+<script>
+const DB_KEY = 'cg_qbank_v1';
+const LB_KEY = 'cg_leaderboard_v1';
+
+// ===== Réinitialiser la base =====
+document.getElementById('resetDBBtn').addEventListener('click', ()=>{
+  if(confirm("Voulez-vous vraiment réinitialiser la base ? Toutes les questions seront supprimées.")){
+    localStorage.removeItem(DB_KEY);
+    alert("Base réinitialisée !");
+    window.location.reload();
+  }
+});
+
+// ===== Réinitialiser le leaderboard =====
+document.getElementById('resetLBBtn').addEventListener('click', ()=>{
+  if(confirm("Voulez-vous vraiment réinitialiser le leaderboard ? Tous les scores seront supprimés.")){
+    localStorage.removeItem(LB_KEY);
+    alert("Leaderboard réinitialisé !");
+    window.location.reload();
+  }
+});
+
+// ===== Export JSON =====
+document.getElementById('exportBtn').addEventListener('click', ()=>{
+  const db = JSON.parse(localStorage.getItem(DB_KEY) || '[]');
+  const blob = new Blob([JSON.stringify(db,null,2)], {type:'application/json'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'cg_questions_export.json';
+  document.body.appendChild(a);
+  a.click();
+  setTimeout(()=>{ URL.revokeObjectURL(url); a.remove(); },500);
+});
+
+// ===== Import JSON =====
+document.getElementById('importFile').addEventListener('change', (e)=>{
+  if(!e.target.files || !e.target.files[0]) return;
+  const f = e.target.files[0];
+  const reader = new FileReader();
+  reader.onload = ()=>{
+    try{
+      const arr = JSON.parse(reader.result);
+      if(!Array.isArray(arr)) throw new Error('Format JSON invalide');
+      arr.forEach(q=>{ if(!q.id) q.id=Math.random().toString(36).slice(2,11); });
+      localStorage.setItem(DB_KEY, JSON.stringify(arr));
+      alert('Import réussi ! La base a été remplacée.');
+      window.location.reload();
+    }catch(err){
+      alert('Erreur import: '+err.message);
+    }
+  };
+  reader.readAsText(f);
+});
+</script>
+</body>
+</html>

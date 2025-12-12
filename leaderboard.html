@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meilleurs scores</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">Q-TA</div>
+    <h1>🏆 Meilleurs scores</h1>
+  </header>
+
+  <main>
+    <section class="card leaderboard-card">
+      
+      <div class="leaderboard-header">
+        <div>
+          <h2>Classement</h2>
+          <p class="subtitle">Compare tes performances par thème</p>
+        </div>
+
+        <div class="filter-box">
+          <label for="themeFilter">Thème</label>
+          <select id="themeFilter">
+            <option value="all">Tous</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="leaderboardList" class="leaderboard-list"></div>
+
+      <div class="leaderboard-footer">
+        <a href="quiz.html" class="ghost">⬅ Retour au quiz</a>
+      </div>
+
+    </section>
+  </main>
+</div>
+
+<script src="leaderboard.js"></script>
+</body>
+</html>

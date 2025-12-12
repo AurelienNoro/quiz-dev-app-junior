@@ -1,0 +1,395 @@
+/* ====== Reset & base ====== */
+body, html {
+  margin: 0; padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0e0e1a;
+  color: #f0f0f0;
+}
+
+.wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ====== Header ====== */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+/* ====== Card sections ====== */
+.card {
+  background-color: #1a1a2e;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* ====== Buttons ====== */
+.btn, .ghost {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn {
+  background-color: #4ecca3;
+  color: #0e0e1a;
+}
+
+.ghost {
+  background-color: transparent;
+  color: #4ecca3;
+  border: 2px solid #4ecca3;
+}
+
+.btn:hover, .ghost:hover {
+  opacity: 0.8;
+}
+
+/* ====== Quiz section ====== */
+.progress-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  gap: 10px;
+}
+
+.progress-bar div {
+  font-size: 0.9em;
+}
+
+.timer {
+  font-weight: bold;
+  color: #ff6b6b;
+}
+
+/* ====== Question & choices ====== */
+#questionBox {
+  font-size: 1.1em;
+  margin-bottom: 12px;
+}
+
+.choice {
+  background-color: #2e2e4d;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.choice:hover { background-color: #3f3f6b; }
+
+.choice.correct { background-color: #4ecca3 !important; color: #0e0e1a; }
+.choice.wrong { background-color: #ff6b6b !important; color: #0e0e1a; }
+
+/* ====== Result section ====== */
+#resultSummary {
+  margin-top: 8px;
+  font-size: 1em;
+}
+
+/* ====== Leaderboard ====== */
+.leaderboard-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.leaderboard-row div { display: flex; flex-direction: column; }
+
+/* ====== Form inputs ====== */
+input[type=text], select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #4ecca3;
+  background-color: #1a1a2e;
+  color: #f0f0f0;
+  margin-left: 6px;
+}
+
+input[type=text]::placeholder {
+  color: #aaa;
+}
+
+/* ====== Links ====== */
+a {
+  color: #4ecca3;
+  text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+/* Zone explication des questions */
+#explanationBox {
+  margin-top: 8px;
+  font-size: 0.9em;
+  color: #aaa;
+}
+
+/* ====== Tableau récapitulatif ====== */
+.recap-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+  font-size: 0.9em;
+}
+
+.recap-table th,
+.recap-table td {
+  padding: 10px;
+  text-align: left;
+}
+
+.recap-table th {
+  background-color: #2e2e4d;
+  color: #fff;
+}
+
+.recap-table tr.good {
+  background-color: rgba(78, 204, 163, 0.2);
+  border-left: 5px solid #4ecca3;
+}
+
+.recap-table tr.bad {
+  background-color: rgba(255, 107, 107, 0.2);
+  border-left: 5px solid #ff6b6b;
+}
+
+.recap-table td.result {
+  font-weight: bold;
+}
+
+.recap-table tr.good td.result {
+  color: #4ecca3;
+}
+
+.recap-table tr.bad td.result {
+  color: #ff6b6b;
+}
+/* ====== Présentation du quiz ====== */
+.presentation h2 {
+  margin-top: 0;
+  color: #4ecca3;
+  font-size: 1.4em;
+}
+
+.presentation-list {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0;
+}
+
+.presentation-list li {
+  background: #2e2e4d;
+  margin-bottom: 8px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 0.95em;
+}
+
+.presentation-footer {
+  margin-top: 12px;
+  text-align: center;
+  font-weight: bold;
+  color: #4ecca3;
+}
+
+/* ====== Leaderboard amélioré ====== */
+.leaderboard-card h2 {
+  margin: 0;
+  color: #4ecca3;
+}
+
+.subtitle {
+  font-size: 0.85em;
+  color: #aaa;
+}
+
+.leaderboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.filter-box {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85em;
+}
+
+.leaderboard-list {
+  margin-top: 10px;
+}
+
+.leaderboard-row {
+  background: #2e2e4d;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.leaderboard-row:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+.leaderboard-row span {
+  font-size: 0.75em;
+  color: #aaa;
+}
+
+.leaderboard-footer {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.theme-label {
+  font-weight: normal;
+  color: #aaa;
+}
+/* ====== Alignement leaderboard ====== */
+.leaderboard-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  align-items: center;
+  gap: 12px;
+}
+
+.lb-col.name strong {
+  font-size: 1em;
+}
+
+.lb-col.name span {
+  font-size: 0.75em;
+  color: #aaa;
+}
+
+.lb-col.score {
+  text-align: center;
+  font-weight: bold;
+  color: #4ecca3;
+}
+
+.lb-col.theme {
+  text-align: right;
+  font-size: 0.9em;
+  color: #aaa;
+  text-align: right;
+  white-space: nowrap;
+}
+.lb-col {
+  min-width: 0;
+}
+/* ====== Timeout (temps écoulé) ====== */
+.timeout-title {
+  color: #ff6b6b;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.timeout-explanation {
+  color: #4ecca3;
+  font-size: 0.9em;
+}
+/* ====== Header global ====== */
+.app-header {
+  display: grid;
+  grid-template-columns: auto 1fr; /* logo | zone titre */
+  align-items: center;
+  margin-bottom: 24px;
+  padding: 14px 18px;
+  background: linear-gradient(135deg, #1a1a2e, #151526);
+  border-radius: 14px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.4);
+  gap: 16px;
+}
+
+.header-left {
+  justify-self: center;  /* <-- centre le bloc titre dans la colonne */
+  text-align: center;     /* <-- centre le texte */
+}
+
+.logo {
+  font-size: 1.6em;
+  font-weight: 800;
+  color: #4ecca3;
+}
+.title-group {
+  text-align: center;
+   justify-content: center;
+}
+
+.title-group h1 {
+  margin: 0;
+  font-size: 1.2em;
+  justify-content: center;
+}
+
+.title-group .subtitle {
+  display: block;
+  font-size: 0.75em;
+  color: #aaa;
+}
+
+
+.title-group .subtitle {
+  font-size: 0.75em;
+  color: #aaa;
+}
+
+/* ====== Navigation ====== */
+.header-nav {
+  display: flex;
+  gap: 14px;
+}
+
+.header-nav a {
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.85em;
+  border: 1px solid transparent;
+  transition: 0.2s;
+}
+
+.header-nav a:hover {
+  border-color: #4ecca3;
+  background: rgba(78, 204, 163, 0.1);
+}
+
+.main-title {
+  font-size: 5rem;
+  font-weight: 900;
+  text-align: center;
+  line-height: 1;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+}
+.welcome-subtitle {
+  text-align: center;
+  margin-top: 6px;
+  font-size: 0.95em;
+  color: #aaa;
+}
