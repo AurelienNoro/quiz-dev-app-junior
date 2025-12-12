@@ -22,15 +22,52 @@
 </style>
 </head>
 <body>
+<script>
+  const AUTH_KEY = "json_auth_ok";
+
+  // hash SHA-256 de "admin123"
+  const PASSWORD_HASH =
+"2f6f44eb968b9427f4e0fac2485b69c4137450a01232b34ed8e73995865fe634";
+
+  async function sha256(text) {
+    const data = new TextEncoder().encode(text);
+    const hashBuffer = await crypto.subtle.digest("SHA-256", data);
+    return Array.from(new Uint8Array(hashBuffer))
+      .map(b => b.toString(16).padStart(2, "0"))
+      .join("");
+  }
+
+  async function checkPassword() {
+    if (localStorage.getItem(AUTH_KEY) === "true") return;
+
+    const pwd = prompt("Mot de passe administrateur :");
+    if (!pwd) {
+      window.location.href = "index.html";
+      return;
+    }
+
+    const hash = await sha256(pwd);
+
+    if (hash === PASSWORD_HASH) {
+      localStorage.setItem(AUTH_KEY, "true");
+      alert("Accès autorisé ✅");
+    } else {
+      alert("Mot de passe incorrect ❌");
+      window.location.href = "index.html";
+    }
+  }
+
+  checkPassword();
+</script>
+
 <div class="wrap">
   <header>
-    <div class="logo">Q-TA</div>
     <h1>Gestion JSON — Quiz</h1>
   </header>
 
   <!-- Bouton retour quiz -->
   <div style="margin-bottom:16px;">
-    <a href="quiz.html" class="btn">Retour au Quiz</a>
+    <a href="index.html" class="btn">Retour au Quiz</a>
   </div>
 
   <div class="panel">

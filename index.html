@@ -9,20 +9,24 @@
 <body>
 <div class="wrap">
   <header class="app-header">
-  <div class="logo">Q-TA</div>
-  <div class="header-left">
-<div class="title-group">
-  <h1 class="main-title">Quiz Dev App Junior</h1>
-</div>
+  <div class="header-center">
+    <h1 class="main-title">
+      QUIZ DEV APP JUNIOR <span class="plus"></span>
+    </h1>
+    <a href="leaderboard.html" class="score-link">
+      Voir les scores 🏆
+    </a>
   </div>
 </header>
+
   <!-- Présentation du quiz -->
   <section class="card presentation" id="presentation">
 <h2>Bienvenue dans le Quiz 🎯</h2>
 
+
   <ul class="presentation-list">
     <li>📘 QCM avec une seule bonne réponse</li>
-    <li>🧠 Jusqu’à 20 questions par quiz</li>
+    <li>🧠 15 questions par quiz</li>
     <li>⏱️ Temps limité par question</li>
   </ul>
 
@@ -46,6 +50,7 @@
       <div id="themeLabel">Thème: Tous</div>
       <div>Score: <span id="scoreBox">0</span></div>
       <div class="timer" id="timerBox">20s</div>
+	  
     </div>
     <div id="questionBox"></div>
     <div id="choicesBox"></div>
@@ -68,7 +73,18 @@
   <div id="recapBox"></div>
 </div>
   </section>
+  <footer style="text-align:center; margin-top:30px; font-size:0.85em;">
+  <a href="json.html" id="footerAdminLink" style="display:none;">
+   Q-TA
+  </a>
+</footer>
 </div>
 <script src="quiz.js"></script>
+<script>
+  // Affiche le lien admin uniquement si authentifié
+  if (localStorage.getItem("json_auth_ok") === "true") {
+    document.getElementById("footerAdminLink").style.display = "inline-block";
+  }
+</script>
 </body>
 </html>

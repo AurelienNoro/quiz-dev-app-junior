@@ -54,7 +54,7 @@ startBtn.addEventListener('click', () => {
     return;
   }
 
-  QUESTIONS = shuffle(pool).slice(0, 3
+  QUESTIONS = shuffle(pool).slice(0, 15
  );
   currentIndex = 0;
   score = 0;

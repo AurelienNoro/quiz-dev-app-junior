@@ -393,3 +393,54 @@ a:hover { text-decoration: underline; }
   font-size: 0.95em;
   color: #aaa;
 }
+.app-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 16px;
+  background: linear-gradient(135deg, #1e1e2f, #2a2a40);
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.header-center {
+  text-align: center;
+}
+
+.main-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.main-title .plus {
+  color: #4cafef;
+  font-size: 2.2rem;
+  margin-left: 6px;
+}
+
+.score-link {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 0.95rem;
+  color: #4cafef;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.score-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.title-link {
+  color: inherit;        /* garde la couleur du titre */
+  text-decoration: none; /* enlève le soulignement */
+}
+
+.title-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

@@ -4,7 +4,7 @@ const leaderboardList = document.getElementById('leaderboardList');
 
 function loadLeaderboard() {
   const lb = JSON.parse(localStorage.getItem(LB_KEY) || '[]');
-  const themes = ['Tous', ...new Set(lb.map(s => s.themes))];
+  const themes = [ ...new Set(lb.map(s => s.themes))];
   themeFilter.innerHTML = themes.map(t => `<option value="${t}">${t}</option>`).join('');
   displayLeaderboard(lb, themeFilter.value);
 }
