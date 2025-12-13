@@ -115,7 +115,11 @@ function updateQuestion() {
 
   progress.textContent = `Question ${currentIndex + 1} / ${QUESTIONS.length}`;
   themeLabel.textContent = `Thème: ${q.theme}`;
-  questionBox.textContent = q.question;
+  questionBox.innerHTML = `
+  <div class="question-title">
+    ${q.question}
+  </div>
+`;
   explanationBox.textContent = '';
   choicesBox.innerHTML = '';
 
@@ -279,6 +283,7 @@ saveScoreBtn.addEventListener('click', () => {
   localStorage.setItem(LB_KEY, JSON.stringify(lb));
   alert('Score enregistré !');
 });
+
 
 
 
