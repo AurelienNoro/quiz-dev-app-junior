@@ -60,8 +60,23 @@ async function initDB() {
 // ==== Init thèmes ====
 initDB().then(db => {
   QDB = db;
-  refreshThemes();
-});
+function refreshThemes() {
+  if (!Array.isArray(QDB) || QDB.length === 0) {
+    console.warn("QDB vide, thèmes non chargés");
+    return;
+  }
+
+  const themes = [...new Set(
+    QDB
+      .map(q => (q.theme || '').trim())
+      .filter(t => t.length > 0)
+  )];
+
+  themeSelect.innerHTML =
+    '<option value="all">Tous</option>' +
+    themes.map(t => `<option value="${t}">${t}</option>`).join('');
+}
+
 
 // ==== Start quiz ====
 startBtn.addEventListener('click', () => {
@@ -262,4 +277,5 @@ saveScoreBtn.addEventListener('click', () => {
   localStorage.setItem(LB_KEY, JSON.stringify(lb));
   alert('Score enregistré !');
 });
+
 
