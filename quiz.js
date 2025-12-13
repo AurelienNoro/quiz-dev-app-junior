@@ -281,7 +281,9 @@ saveScoreBtn.addEventListener('click', async () => {
     date: new Date().toISOString()
   };
 
-  console.log('Tentative enregistrement score Firebase', scoreObj);
+  console.log("Tentative enregistrement score Firebase", scoreObj);
+
+
 
   try {
     if (window.saveScoreRemote) {
@@ -295,6 +297,7 @@ saveScoreBtn.addEventListener('click', async () => {
     alert('Erreur lors de l’enregistrement du score');
   }
 });
+
 
 
 
