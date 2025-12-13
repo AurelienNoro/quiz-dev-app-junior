@@ -1,26 +1,31 @@
-// 1) Colle ici le firebaseConfig donné par la console Firebase
 const firebaseConfig = {
-  apiKey: "XXX",
-  authDomain: "XXX",
-  projectId: "XXX",
-  storageBucket: "XXX",
-  messagingSenderId: "XXX",
-  appId: "XXX"
+  apiKey: "TON_API_KEY",
+  authDomain: "TON_PROJECT_ID.firebaseapp.com",
+  projectId: "TON_PROJECT_ID",
+  storageBucket: "TON_PROJECT_ID.appspot.com",
+  messagingSenderId: "XXXX",
+  appId: "XXXX"
 };
 
+// Init Firebase
 firebase.initializeApp(firebaseConfig);
 
 // Firestore
 const db = firebase.firestore();
 
-// Expose globalement pour quiz.js & leaderboard.js
+// Expose globalement
 window.db = db;
-window.fb = firebase;
+window.firebaseLoaded = true;
 
-// Fonction utilitaire: enregistrer un score dans Firestore
+// Utilitaires
 window.saveScoreRemote = async function(scoreObj) {
   return db.collection('scores').add({
     ...scoreObj,
     createdAt: firebase.firestore.FieldValue.serverTimestamp()
   });
+};
+
+window.getAppVersion = async function () {
+  const snap = await db.collection('meta').doc('app').get();
+  return snap.exists ? snap.data() : null;
 };
