@@ -73,18 +73,24 @@
   <div id="recapBox"></div>
 </div>
   </section>
-  <footer style="text-align:center; margin-top:30px; font-size:0.85em;">
-  <a href="json.html" id="footerAdminLink" style="display:none;">
-   Q-TA
-  </a>
+<footer style="text-align:center; margin-top:30px; font-size:0.85em;">
+  <span id="footerQTA">Q-TA</span>
 </footer>
 </div>
 <script src="quiz.js"></script>
 <script>
-  // Affiche le lien admin uniquement si authentifié
+  const footer = document.getElementById("footerQTA");
+
   if (localStorage.getItem("json_auth_ok") === "true") {
-    document.getElementById("footerAdminLink").style.display = "inline-block";
+    const link = document.createElement("a");
+    link.href = "json.html";
+    link.textContent = "Q-TA";
+    link.style.color = "#4ecca3";
+    link.style.textDecoration = "none";
+
+    footer.replaceWith(link);
   }
 </script>
 </body>
 </html>
+
