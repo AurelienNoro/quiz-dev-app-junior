@@ -265,27 +265,38 @@ function shuffle(a) {
 }
 
 // ==== Save score ====
-saveScoreBtn.addEventListener('click', () => {
+saveScoreBtn.addEventListener('click', async () => {
   const name = (playerName.value || 'Anonyme').trim();
+
   if (!name) {
-    alert('Entrez un pseudo.');
+    alert('Entre un pseudo');
     return;
   }
 
-  const lb = JSON.parse(localStorage.getItem(LB_KEY) || '[]');
-  const theme = themeSelect.value === 'all' ? 'Tous' : themeSelect.value;
-
-  lb.push({
+  const scoreObj = {
     name,
     score,
     total: QUESTIONS.length,
-    date: new Date().toISOString(),
-    themes: theme
-  });
+    theme: themeSelect.value === 'all' ? 'Tous' : themeSelect.value,
+    date: new Date().toISOString()
+  };
 
-  localStorage.setItem(LB_KEY, JSON.stringify(lb));
-  alert('Score enregistré !');
+  console.log('Tentative enregistrement score Firebase', scoreObj);
+
+  try {
+    if (window.saveScoreRemote) {
+      await window.saveScoreRemote(scoreObj);
+      alert('✅ Score enregistré globalement');
+    } else {
+      alert('⚠️ Firebase non disponible');
+    }
+  } catch (e) {
+    console.error('❌ Erreur enregistrement Firebase', e);
+    alert('Erreur lors de l’enregistrement du score');
+  }
 });
+
+
 
 
 
