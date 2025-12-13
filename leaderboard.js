@@ -45,7 +45,7 @@ function refreshThemeOptions(scores) {
   const themes = Array.from(new Set(scores.map(s => (s.theme || '').trim()).filter(Boolean))).sort();
 
   themeFilter.innerHTML =
-    `<option value="all">Score</option>` +
+    `<option value="all">Tous</option>` +
     themes.map(t => `<option value="${escapeAttr(t)}">${escapeHtml(t)}</option>`).join('');
 }
 
@@ -88,6 +88,7 @@ loadLeaderboardGlobal().catch(err => {
   console.error(err);
   leaderboardList.innerHTML = '<div>Erreur de chargement du leaderboard.</div>';
 });
+
 
 
 
