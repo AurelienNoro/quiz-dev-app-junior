@@ -58,8 +58,6 @@ async function initDB() {
 
 
 // ==== Init thèmes ====
-initDB().then(db => {
-  QDB = db;
 function refreshThemes() {
   if (!Array.isArray(QDB) || QDB.length === 0) {
     console.warn("QDB vide, thèmes non chargés");
@@ -77,6 +75,10 @@ function refreshThemes() {
     themes.map(t => `<option value="${t}">${t}</option>`).join('');
 }
 
+initDB().then(db => {
+  QDB = db;
+  refreshThemes();
+});
 
 // ==== Start quiz ====
 startBtn.addEventListener('click', () => {
@@ -277,5 +279,6 @@ saveScoreBtn.addEventListener('click', () => {
   localStorage.setItem(LB_KEY, JSON.stringify(lb));
   alert('Score enregistré !');
 });
+
 
 
