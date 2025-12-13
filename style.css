@@ -443,4 +443,13 @@ a:hover { text-decoration: underline; }
 .title-link:hover {
   text-decoration: underline;
   cursor: pointer;
+
+}
+
+.question-title {
+  font-size: 1.4em;
+  font-weight: bold;
+  line-height: 1.4;
+  margin-bottom: 16px;
+  color: #ffffff;
 }
