@@ -1,57 +1,90 @@
-const LB_KEY = 'cg_leaderboard_v1';
 const themeFilter = document.getElementById('themeFilter');
 const leaderboardList = document.getElementById('leaderboardList');
 
-function loadLeaderboard() {
-  const lb = JSON.parse(localStorage.getItem(LB_KEY) || '[]');
-  const themes = [ ...new Set(lb.map(s => s.themes))];
-  themeFilter.innerHTML = themes.map(t => `<option value="${t}">${t}</option>`).join('');
-  displayLeaderboard(lb, themeFilter.value);
-}
+let allScores = [];
 
-function displayLeaderboard(lb, theme) {
+// Affichage
+function displayLeaderboard(scores, theme) {
   leaderboardList.innerHTML = '';
-  let filtered = lb;
-  if(theme !== 'Tous') filtered = lb.filter(s => s.themes === theme);
 
-  if(filtered.length === 0) {
+  let filtered = scores;
+  if (theme && theme !== 'all') {
+    filtered = scores.filter(s => s.theme === theme);
+  }
+
+  if (filtered.length === 0) {
     leaderboardList.innerHTML = '<div>Aucun score pour ce thème.</div>';
     return;
   }
 
-  filtered.sort((a,b) => b.score - a.score);
+  // tri local (au cas où)
+  filtered.sort((a, b) => (b.score - a.score) || (b.total - a.total));
 
-filtered.forEach(s => {
-  const row = document.createElement('div');
-  row.className = 'leaderboard-row';
+  filtered.forEach(s => {
+    const row = document.createElement('div');
+    row.className = 'leaderboard-row';
 
-  const themeClean = Array.isArray(s.themes)
-    ? s.themes.join(', ')
-    : (s.themes || '').trim().toUpperCase();
+    row.innerHTML = `
+      <div class="lb-col name">
+        <strong>${escapeHtml(s.name || 'Anonyme')}</strong>
+        <span>${new Date(s.date).toLocaleString()}</span>
+      </div>
+      <div class="lb-col score">
+        ${s.score} / ${s.total}
+      </div>
+      <div class="lb-col theme">
+        ${(s.theme || '').trim().toUpperCase()}
+      </div>
+    `;
 
-  row.innerHTML = `
-    <div class="lb-col name">
-      <strong>${s.name}</strong>
-      <span>${new Date(s.date).toLocaleString()}</span>
-    </div>
-
-    <div class="lb-col score">
-      ${s.score} / ${s.total}
-    </div>
-
-    <div class="lb-col theme">
-      ${themeClean}
-    </div>
-  `;
-
-  leaderboardList.appendChild(row);
-});
-
+    leaderboardList.appendChild(row);
+  });
 }
 
-themeFilter.addEventListener('change', ()=> {
-  const lb = JSON.parse(localStorage.getItem(LB_KEY) || '[]');
-  displayLeaderboard(lb, themeFilter.value);
+function refreshThemeOptions(scores) {
+  const themes = Array.from(new Set(scores.map(s => (s.theme || '').trim()).filter(Boolean))).sort();
+
+  themeFilter.innerHTML =
+    `<option value="all">Tous</option>` +
+    themes.map(t => `<option value="${escapeAttr(t)}">${escapeHtml(t)}</option>`).join('');
+}
+
+// Chargement global Firestore
+async function loadLeaderboardGlobal() {
+  if (!window.db) {
+    leaderboardList.innerHTML = '<div>Firebase non chargé.</div>';
+    return;
+  }
+
+  // Top 100 par score (tu peux augmenter)
+  const snap = await window.db
+    .collection('scores')
+    .orderBy('score', 'desc')
+    .limit(100)
+    .get();
+
+  allScores = snap.docs.map(d => d.data());
+
+  refreshThemeOptions(allScores);
+  displayLeaderboard(allScores, themeFilter.value);
+}
+
+themeFilter.addEventListener('change', () => {
+  displayLeaderboard(allScores, themeFilter.value);
 });
 
-loadLeaderboard();
+// petites protections XSS
+function escapeHtml(str) {
+  return String(str).replace(/[&<>"']/g, s => ({
+    '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
+  }[s]));
+}
+function escapeAttr(str) {
+  return String(str).replace(/"/g, '&quot;');
+}
+
+// GO
+loadLeaderboardGlobal().catch(err => {
+  console.error(err);
+  leaderboardList.innerHTML = '<div>Erreur de chargement du leaderboard.</div>';
+});
