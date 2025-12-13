@@ -73,9 +73,9 @@ function refreshThemes() {
       .filter(t => t.length > 0)
   )];
 
-  themeSelect.innerHTML =
-    '<option value="all">Tous</option>' +
-    themes.map(t => `<option value="${t}">${t}</option>`).join('');
+themeSelect.innerHTML =
+  '<option value="">Choisir un thème</option>' +
+  themes.map(t => `<option value="${t}">${t}</option>`).join('');
 }
 
 initDB().then(db => {
@@ -85,10 +85,15 @@ initDB().then(db => {
 
 // ==== Start quiz ====
 startBtn.addEventListener('click', () => {
-  const theme = themeSelect.value;
-  const pool = theme === 'all'
-    ? QDB.slice()
-    : QDB.filter(q => q.theme === theme);
+const theme = themeSelect.value;
+
+if (!theme) {
+  alert('Choisis un thème');
+  return;
+}
+
+const pool = QDB.filter(q => q.theme === theme);
+
 
   if (pool.length === 0) {
     alert('Aucune question disponible.');
@@ -277,7 +282,7 @@ saveScoreBtn.addEventListener('click', async () => {
     name,
     score,
     total: QUESTIONS.length,
-    theme: themeSelect.value === 'all' ? 'Tous' : themeSelect.value,
+    theme: themeSelect.value,
     date: new Date().toISOString()
   };
 
@@ -297,6 +302,7 @@ saveScoreBtn.addEventListener('click', async () => {
     alert('Erreur lors de l’enregistrement du score');
   }
 });
+
 
 
 
