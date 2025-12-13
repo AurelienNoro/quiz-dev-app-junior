@@ -1,10 +1,11 @@
 const firebaseConfig = {
-  apiKey: "TON_API_KEY",
-  authDomain: "TON_PROJECT_ID.firebaseapp.com",
-  projectId: "TON_PROJECT_ID",
-  storageBucket: "TON_PROJECT_ID.appspot.com",
-  messagingSenderId: "XXXX",
-  appId: "XXXX"
+  apiKey: "AIzaSyB7dE-2rkwDhknlB15WeedwWXAK-bJASBU",
+  authDomain: "bddquiz.firebaseapp.com",
+  projectId: "bddquiz",
+  storageBucket: "bddquiz.firebasestorage.app",
+  messagingSenderId: "1057343381838",
+  appId: "1:1057343381838:web:d951f12e9d2957c3f73e1f",
+  measurementId: "G-ZC0PXB7BN5"
 };
 
 // Init Firebase
@@ -29,3 +30,4 @@ window.getAppVersion = async function () {
   const snap = await db.collection('meta').doc('app').get();
   return snap.exists ? snap.data() : null;
 };
+
