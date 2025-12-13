@@ -453,3 +453,12 @@ a:hover { text-decoration: underline; }
   margin-bottom: 16px;
   color: #ffffff;
 }
+
+footer {
+  opacity: 0.6;
+}
+
+footer a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
