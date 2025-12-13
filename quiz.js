@@ -1,7 +1,8 @@
 // ==== DB / Quiz ====
 const DB_KEY = 'cg_qbank_v1';
 const LB_KEY = 'cg_leaderboard_v1';
-const JSON_URL = 'question_corrected_explanations_clean.json';
+const JSON_URL =
+  'https://aureliennoro.github.io/quiz-dev-app-junior/question_corrected_explanations_clean.json';
 
 // ==== DOM ====
 const themeSelect = document.getElementById('themeSelect');
@@ -29,29 +30,32 @@ let score = 0;
 let timer = null;
 let selectedIndex = null;
 
-// ==== Initialisation DB ====
 async function initDB() {
   const localDB = localStorage.getItem(DB_KEY);
 
-  // Si la base existe déjà chez le visiteur
   if (localDB) {
-    return JSON.parse(localDB);
+    const parsed = JSON.parse(localDB);
+    if (Array.isArray(parsed) && parsed.length > 0) {
+      return parsed;
+    }
   }
 
-  // Sinon on charge le JSON public (GitHub Pages)
   try {
-    const res = await fetch(JSON_URL);
-    if (!res.ok) throw new Error('JSON non accessible');
-    const data = await res.json();
+    const res = await fetch(
+      'https://aureliennoro.github.io/quiz-dev-app-junior/question_corrected_explanations_clean.json'
+    );
+    if (!res.ok) throw new Error('Fetch failed');
 
+    const data = await res.json();
     localStorage.setItem(DB_KEY, JSON.stringify(data));
     return data;
-  } catch (err) {
-    alert("Erreur : impossible de charger les questions.");
-    console.error(err);
+  } catch (e) {
+    console.error(e);
+    alert('Impossible de charger les questions');
     return [];
   }
 }
+
 
 // ==== Init thèmes ====
 initDB().then(db => {
@@ -258,3 +262,4 @@ saveScoreBtn.addEventListener('click', () => {
   localStorage.setItem(LB_KEY, JSON.stringify(lb));
   alert('Score enregistré !');
 });
+
