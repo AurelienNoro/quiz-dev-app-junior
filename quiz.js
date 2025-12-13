@@ -1,11 +1,7 @@
 // ==== DB / Quiz ====
 const DB_KEY = 'cg_qbank_v1';
 const LB_KEY = 'cg_leaderboard_v1';
-const SEED = [];
-
-function loadDB() {
-  return JSON.parse(localStorage.getItem(DB_KEY) || JSON.stringify(SEED));
-}
+const JSON_URL = 'question_corrected_explanations_clean.json';
 
 // ==== DOM ====
 const themeSelect = document.getElementById('themeSelect');
@@ -26,21 +22,34 @@ const explanationBox = document.getElementById('explanationBox');
 const recapBox = document.getElementById('recapBox');
 
 // ==== State ====
-let QDB = loadDB();
+let QDB = [];
 let QUESTIONS = [];
 let currentIndex = 0;
 let score = 0;
 let timer = null;
 let selectedIndex = null;
 
-// ==== Init thèmes ====
-function refreshThemes() {
-  const themes = [...new Set(QDB.map(q => q.theme))];
-  themeSelect.innerHTML =
-    '<option value="all">Tous</option>' +
-    themes.map(t => `<option value="${t}">${t}</option>`).join('');
+
+// Initialisation automatique de la base
+async function initDB() {
+  const local = localStorage.getItem(DB_KEY);
+
+  if (local) {
+    return JSON.parse(local);
+  }
+
+  const res = await fetch(JSON_URL);
+  const data = await res.json();
+
+  localStorage.setItem(DB_KEY, JSON.stringify(data));
+  return data;
 }
-refreshThemes();
+
+// ==== Init thèmes ====
+initDB().then(db => {
+  QDB = db;
+  refreshThemes();
+});
 
 // ==== Start quiz ====
 startBtn.addEventListener('click', () => {
@@ -241,4 +250,3 @@ saveScoreBtn.addEventListener('click', () => {
   localStorage.setItem(LB_KEY, JSON.stringify(lb));
   alert('Score enregistré !');
 });
-
