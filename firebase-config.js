@@ -2,7 +2,7 @@ const firebaseConfig = {
   apiKey: "AIzaSyB7dE-2rkwDhknlB15WeedwWXAK-bJASBU",
   authDomain: "bddquiz.firebaseapp.com",
   projectId: "bddquiz",
-  storageBucket: "bddquiz.firebasestorage.app",
+  storageBucket: "bddquiz.appspot.com",
   messagingSenderId: "1057343381838",
   appId: "1:1057343381838:web:d951f12e9d2957c3f73e1f",
   measurementId: "G-ZC0PXB7BN5"
@@ -30,4 +30,5 @@ window.getAppVersion = async function () {
   const snap = await db.collection('meta').doc('app').get();
   return snap.exists ? snap.data() : null;
 };
+
 
