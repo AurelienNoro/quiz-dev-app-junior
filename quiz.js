@@ -29,20 +29,28 @@ let score = 0;
 let timer = null;
 let selectedIndex = null;
 
-
-// Initialisation automatique de la base
+// ==== Initialisation DB ====
 async function initDB() {
-  const local = localStorage.getItem(DB_KEY);
+  const localDB = localStorage.getItem(DB_KEY);
 
-  if (local) {
-    return JSON.parse(local);
+  // Si la base existe déjà chez le visiteur
+  if (localDB) {
+    return JSON.parse(localDB);
   }
 
-  const res = await fetch(JSON_URL);
-  const data = await res.json();
+  // Sinon on charge le JSON public (GitHub Pages)
+  try {
+    const res = await fetch(JSON_URL);
+    if (!res.ok) throw new Error('JSON non accessible');
+    const data = await res.json();
 
-  localStorage.setItem(DB_KEY, JSON.stringify(data));
-  return data;
+    localStorage.setItem(DB_KEY, JSON.stringify(data));
+    return data;
+  } catch (err) {
+    alert("Erreur : impossible de charger les questions.");
+    console.error(err);
+    return [];
+  }
 }
 
 // ==== Init thèmes ====
