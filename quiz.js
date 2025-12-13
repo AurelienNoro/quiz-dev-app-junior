@@ -1,3 +1,6 @@
+console.log("firebaseLoaded =", window.firebaseLoaded);
+console.log("db =", window.db);
+
 // ==== DB / Quiz ====
 const DB_KEY = 'cg_qbank_v1';
 const LB_KEY = 'cg_leaderboard_v1';
@@ -283,6 +286,7 @@ saveScoreBtn.addEventListener('click', () => {
   localStorage.setItem(LB_KEY, JSON.stringify(lb));
   alert('Score enregistré !');
 });
+
 
 
 
