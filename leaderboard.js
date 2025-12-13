@@ -88,3 +88,5 @@ loadLeaderboardGlobal().catch(err => {
   console.error(err);
   leaderboardList.innerHTML = '<div>Erreur de chargement du leaderboard.</div>';
 });
+scores = scores.filter(s => s.theme && s.theme !== 'Tous');
+
