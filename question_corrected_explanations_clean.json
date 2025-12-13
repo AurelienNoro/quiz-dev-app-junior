@@ -1,0 +1,2875 @@
+[
+  {
+    "ID": "ALG001",
+    "question": "Qu'est-ce qu'un algorithme ?",
+    "options": [
+      "Une suite d'étapes pour résoudre un problème",
+      "Un langage de programmation",
+      "Un ordinateur",
+      "Un fichier exécutable"
+    ],
+    "answer": 0,
+    "theme": "Algorithme",
+    "explanation": "Un algorithme est une procédure en plusieurs étapes destinée à résoudre un problème."
+  },
+  {
+    "ID": "ALG002",
+    "question": "Quelle structure permet de répéter des instructions ?",
+    "options": [
+      "if",
+      "Boucle",
+      "Fonction",
+      "Variable"
+    ],
+    "answer": 1,
+    "theme": "Algorithme",
+    "explanation": "Les boucles permettent de répéter un bloc de code tant qu'une condition est vraie."
+  },
+  {
+    "ID": "ALG003",
+    "question": "Qu'est-ce qu'une variable ?",
+    "options": [
+      "Une fonction spéciale",
+      "Un type de boucle",
+      "Un espace pour stocker des données",
+      "Une condition"
+    ],
+    "answer": 2,
+    "theme": "Algorithme",
+    "explanation": "Une variable est un emplacement mémoire qui permet de stocker temporairement une valeur."
+  },
+  {
+    "ID": "ALG004",
+    "question": "Qu'est-ce qu'une fonction dans un algorithme ?",
+    "options": [
+      "Une variable spéciale",
+      "Une boucle infinie",
+      "Une condition",
+      "Un sous-algorithme réutilisable"
+    ],
+    "answer": 3,
+    "theme": "Algorithme",
+    "explanation": "Une fonction est un bloc de code indépendant qui peut être réutilisé plusieurs fois."
+  },
+  {
+    "ID": "ALG005",
+    "question": "Quel type de boucle répète les instructions tant qu'une condition est vraie ?",
+    "options": [
+      "if",
+      "while",
+      "switch",
+      "function"
+    ],
+    "answer": 1,
+    "theme": "Algorithme",
+    "explanation": "La boucle while permet de répéter des instructions tant qu’une condition est vraie."
+  },
+  {
+    "ID": "ALG006",
+    "question": "Que fait une boucle 'for' ?",
+    "options": [
+      "Exécute une action une seule fois",
+      "Répète un bloc un nombre fixe de fois",
+      "Teste une condition et choisit un chemin",
+      "Stocke une valeur"
+    ],
+    "answer": 1,
+    "theme": "Algorithme",
+    "explanation": "La boucle 'for' est utilisée pour répéter un bloc de code un nombre déterminé de fois."
+  },
+  {
+    "ID": "ALG007",
+    "question": "Qu'est-ce qu'une condition 'else' ?",
+    "options": [
+      "Une répétition infinie",
+      "Une fonction spéciale",
+      "Un choix alternatif quand 'if' est faux",
+      "Une variable"
+    ],
+    "answer": 2,
+    "theme": "Algorithme",
+    "explanation": "Le bloc 'else' s'exécute uniquement si la condition 'if' est fausse."
+  },
+  {
+    "ID": "ALG008",
+    "question": "Quel mot-clé permet de prendre une décision en fonction d'une condition ?",
+    "options": [
+      "for",
+      "while",
+      "print",
+      "if"
+    ],
+    "answer": 3,
+    "theme": "Algorithme",
+    "explanation": "Le mot-clé 'if' permet de tester une condition et d'exécuter un bloc de code selon le résultat."
+  },
+  {
+    "ID": "ALG009",
+    "question": "Qu'est-ce qu'une boucle infinie ?",
+    "options": [
+      "Une boucle qui ne se termine jamais",
+      "Une condition qui change toujours",
+      "Une variable spéciale",
+      "Un type de fonction"
+    ],
+    "answer": 0,
+    "theme": "Algorithme",
+    "explanation": "Une boucle infinie continue sans jamais s'arrêter car sa condition reste toujours vraie."
+  },
+  {
+    "ID": "ALG010",
+    "question": "Que fait l'instruction 'break' dans une boucle ?",
+    "options": [
+      "Recommence la boucle",
+      "Sort de la boucle immédiatement",
+      "Crée une nouvelle variable",
+      "Teste une condition"
+    ],
+    "answer": 1,
+    "theme": "Algorithme",
+    "explanation": "L'instruction 'break' permet de sortir d'une boucle avant que sa condition ne devienne fausse."
+  },
+  {
+    "ID": "ALG011",
+    "question": "Quel est le rôle d’un tableau (array) en algorithmique ?",
+    "options": [
+      "Stocker une seule valeur",
+      "Créer une fonction",
+      "Stocker plusieurs valeurs du même type",
+      "Déterminer une condition"
+    ],
+    "answer": 2,
+    "theme": "Algorithme",
+    "explanation": "Un tableau permet de stocker plusieurs valeurs du même type dans une seule structure."
+  },
+  {
+    "ID": "ALG011_1",
+    "question": "Qu'est-ce qu'un test logique 'ET' (AND) dans un algorithme ?",
+    "options": [
+      "Il teste si au moins une condition est vraie",
+      "Il inverse la valeur d'une condition",
+      "Il répète une boucle",
+      "Il teste si toutes les conditions sont vraies"
+    ],
+    "answer": 3,
+    "theme": "Algorithme",
+    "explanation": "L'opérateur logique 'ET' retourne vrai seulement si toutes les conditions sont vraies."
+  },
+  {
+    "ID": "ALG012",
+    "question": "Qu'est-ce qu'un test logique 'OU' (OR) ?",
+    "options": [
+      "Il teste si au moins une condition est vraie",
+      "Il teste si toutes les conditions sont vraies",
+      "Il arrête la boucle",
+      "Il crée une variable"
+    ],
+    "answer": 0,
+    "theme": "Algorithme",
+    "explanation": "L'opérateur logique 'OU' retourne vrai si au moins une des conditions est vraie."
+  },
+  {
+    "ID": "ALG013",
+    "question": "Qu'est-ce qu'un opérateur de comparaison ?",
+    "options": [
+      "Un symbole pour additionner",
+      "Un symbole pour comparer deux valeurs",
+      "Un type de boucle",
+      "Une fonction"
+    ],
+    "answer": 1,
+    "theme": "Algorithme",
+    "explanation": "Les opérateurs de comparaison permettent de comparer deux valeurs, par exemple =, <, >, <=, >=, !="
+  },
+  {
+    "ID": "ALG014",
+    "question": "Quelle est la différence entre 'while' et 'do while' ?",
+    "options": [
+      "Il n'y a pas de différence",
+      "'while' ne peut pas avoir de condition",
+      "'do while' s'exécute au moins une fois",
+      "'do while' ne peut pas avoir de variable"
+    ],
+    "answer": 2,
+    "theme": "Algorithme",
+    "explanation": "'do while' exécute le bloc au moins une fois avant de tester la condition."
+  },
+  {
+    "ID": "ALG015",
+    "question": "Qu'est-ce qu'un algorithme de tri ?",
+    "options": [
+      "Un algorithme qui répète des conditions",
+      "Un algorithme qui calcule une moyenne",
+      "Un algorithme qui teste une boucle",
+      "Un algorithme qui organise des données dans un ordre"
+    ],
+    "answer": 3,
+    "theme": "Algorithme",
+    "explanation": "Un algorithme de tri organise les données selon un ordre précis, par exemple croissant ou décroissant."
+  },
+  {
+    "ID": "ALG016",
+    "question": "Qu'est-ce qu'un paramètre dans une fonction ?",
+    "options": [
+      "Une donnée d’entrée pour la fonction",
+      "Une variable globale",
+      "Une boucle spéciale",
+      "Une condition"
+    ],
+    "answer": 0,
+    "theme": "Algorithme",
+    "explanation": "Un paramètre est une valeur que l’on transmet à une fonction pour qu’elle effectue ses calculs."
+  },
+  {
+    "ID": "ALG017",
+    "question": "Qu'est-ce que l'optimisation d'un algorithme ?",
+    "options": [
+      "Ajouter plus de boucles",
+      "Rendre l'algorithme plus rapide ou moins coûteux en ressources",
+      "Changer toutes les variables",
+      "Créer de nouvelles fonctions inutiles"
+    ],
+    "answer": 1,
+    "theme": "Algorithme",
+    "explanation": "L’optimisation consiste à améliorer un algorithme pour qu’il soit plus efficace en temps ou en mémoire."
+  },
+  {
+    "ID": "ALG018",
+    "question": "Quel est le rôle d’un commentaire dans un algorithme ?",
+    "options": [
+      "Exécuter une instruction",
+      "Créer une variable",
+      "Expliquer le code pour le rendre lisible",
+      "Modifier une fonction"
+    ],
+    "answer": 2,
+    "theme": "Algorithme",
+    "explanation": "Les commentaires permettent aux programmeurs de documenter le code sans affecter son exécution."
+  },
+  {
+    "ID": "ALG019",
+    "question": "Qu'est-ce qu'une instruction conditionnelle imbriquée ?",
+    "options": [
+      "Une boucle dans une autre boucle",
+      "Une variable dans une fonction",
+      "Une fonction récursive",
+      "Un test 'if' à l’intérieur d’un autre 'if'"
+    ],
+    "answer": 3,
+    "theme": "Algorithme",
+    "explanation": "Une condition imbriquée est un test placé à l’intérieur d’un autre test pour vérifier plusieurs critères."
+  },
+  {
+    "ID": "ALG020",
+    "question": "Qu'est-ce qu'un type de donnée ?",
+    "options": [
+      "La structure d’un algorithme",
+      "La nature des valeurs que peut prendre une variable",
+      "Une boucle spéciale",
+      "Une fonction récursive"
+    ],
+    "answer": 0,
+    "theme": "Algorithme",
+    "explanation": "Un type de donnée définit si une variable contient un nombre, un texte, un booléen, etc."
+  },
+  {
+    "ID": "ALG021",
+    "question": "Qu'est-ce qu'une expression booléenne ?",
+    "options": [
+      "Une valeur numérique",
+      "Une expression qui peut être vraie ou fausse",
+      "Une boucle conditionnelle",
+      "Une fonction mathématique"
+    ],
+    "answer": 1,
+    "theme": "Algorithme",
+    "explanation": "Une expression booléenne est une expression logique qui retourne uniquement vrai ou faux."
+  },
+  {
+    "ID": "ALG022",
+    "question": "Que fait une instruction 'print' ?",
+    "options": [
+      "Stocke une variable",
+      "Teste une condition",
+      "Affiche un message à l’écran",
+      "Répète une boucle"
+    ],
+    "answer": 2,
+    "theme": "Algorithme",
+    "explanation": "L’instruction 'print' permet d’afficher des informations à l’écran."
+  },
+  {
+    "ID": "ALG023",
+    "question": "Qu'est-ce qu'une donnée ?",
+    "options": [
+      "Une boucle infinie",
+      "Une fonction spéciale",
+      "Une condition",
+      "Une information utilisée par un algorithme"
+    ],
+    "answer": 3,
+    "theme": "Algorithme",
+    "explanation": "Une donnée est une information que l’algorithme utilise pour effectuer ses calculs."
+  },
+  {
+    "ID": "ALG024",
+    "question": "Qu'est-ce qu'une instruction simple ?",
+    "options": [
+      "Une étape qui ne fait qu’une seule action",
+      "Une boucle",
+      "Une fonction",
+      "Une condition"
+    ],
+    "answer": 0,
+    "theme": "Algorithme",
+    "explanation": "Une instruction simple exécute une seule action dans l’algorithme."
+  },
+  {
+    "ID": "ALG025",
+    "question": "Qu'est-ce qu'une condition ?",
+    "options": [
+      "Une variable spéciale",
+      "Un test qui permet de choisir entre plusieurs actions",
+      "Une boucle infinie",
+      "Une fonction récursive"
+    ],
+    "answer": 1,
+    "theme": "Algorithme",
+    "explanation": "Une condition teste une situation et permet de choisir une action selon le résultat."
+  },
+  {
+    "ID": "ALG026",
+    "question": "Que fait une instruction 'input' ?",
+    "options": [
+      "Affiche un message",
+      "Teste une condition",
+      "Demande une donnée à l’utilisateur",
+      "Crée une boucle"
+    ],
+    "answer": 2,
+    "theme": "Algorithme",
+    "explanation": "L’instruction 'input' permet à l’utilisateur de fournir une donnée à l’algorithme."
+  },
+  {
+    "ID": "ALG027",
+    "question": "Qu'est-ce qu'une variable entière ?",
+    "options": [
+      "Une variable qui contient du texte",
+      "Une variable qui contient vrai/faux",
+      "Une variable qui contient une fonction",
+      "Une variable qui contient des nombres entiers"
+    ],
+    "answer": 3,
+    "theme": "Algorithme",
+    "explanation": "Une variable entière ne peut contenir que des nombres entiers (sans décimales)."
+  },
+  {
+    "ID": "ALG028",
+    "question": "Qu'est-ce qu'une variable chaîne de caractères ?",
+    "options": [
+      "Une variable qui contient du texte",
+      "Une variable qui contient un nombre",
+      "Une variable qui contient vrai/faux",
+      "Une boucle"
+    ],
+    "answer": 0,
+    "theme": "Algorithme",
+    "explanation": "Une variable de type chaîne contient des caractères ou du texte."
+  },
+  {
+    "ID": "ALG029",
+    "question": "Qu'est-ce qu'un bloc d'instructions ?",
+    "options": [
+      "Une seule instruction",
+      "Un ensemble d’instructions regroupées",
+      "Une variable",
+      "Une boucle infinie"
+    ],
+    "answer": 1,
+    "theme": "Algorithme",
+    "explanation": "Un bloc d’instructions est un ensemble d’instructions regroupées pour être exécutées ensemble."
+  },
+  {
+    "ID": "ALG030",
+    "question": "Qu'est-ce qu'un compteur dans une boucle ?",
+    "options": [
+      "Une fonction récursive",
+      "Une condition logique",
+      "Une variable qui compte le nombre d’itérations",
+      "Une valeur booléenne"
+    ],
+    "answer": 2,
+    "theme": "Algorithme",
+    "explanation": "Le compteur sert à suivre combien de fois la boucle a été exécutée."
+  },
+  {
+    "ID": "ALG031",
+    "question": "Qu'est-ce qu'une instruction 'else if' ?",
+    "options": [
+      "Une boucle infinie",
+      "Une variable spéciale",
+      "Une fonction",
+      "Une condition supplémentaire testée si la première est fausse"
+    ],
+    "answer": 3,
+    "theme": "Algorithme",
+    "explanation": "'else if' permet de tester une autre condition quand le premier 'if' est faux."
+  },
+  {
+    "ID": "ALG032",
+    "question": "Qu'est-ce qu'une instruction 'endif' ou 'fin si' ?",
+    "options": [
+      "Elle marque la fin d’un bloc conditionnel",
+      "Elle démarre une boucle",
+      "Elle crée une variable",
+      "Elle appelle une fonction"
+    ],
+    "answer": 0,
+    "theme": "Algorithme",
+    "explanation": "Elle sert à indiquer la fin du bloc de code lié à une condition 'if'."
+  },
+  {
+    "ID": "ALG033",
+    "question": "Qu'est-ce qu'une instruction 'endfor' ou 'fin pour' ?",
+    "options": [
+      "Elle démarre une condition",
+      "Elle marque la fin d’une boucle",
+      "Elle crée une variable",
+      "Elle teste une valeur"
+    ],
+    "answer": 1,
+    "theme": "Algorithme",
+    "explanation": "Elle indique la fin d’un bloc de code qui était répété par une boucle 'for'."
+  },
+  {
+    "ID": "ALG034",
+    "question": "Qu'est-ce qu'une instruction 'break' ?",
+    "options": [
+      "Elle démarre une boucle",
+      "Elle teste une condition",
+      "Elle interrompt la boucle en cours",
+      "Elle crée une variable"
+    ],
+    "answer": 2,
+    "theme": "Algorithme",
+    "explanation": "L’instruction 'break' permet de sortir immédiatement d’une boucle avant qu’elle ne se termine normalement."
+  },
+  {
+    "ID": "ALG035",
+    "question": "Qu'est-ce qu'un test 'if' ?",
+    "options": [
+      "Crée une variable",
+      "Répète une boucle",
+      "Affiche un message",
+      "Vérifie une condition et exécute un bloc si elle est vraie"
+    ],
+    "answer": 3,
+    "theme": "Algorithme",
+    "explanation": "Le test 'if' permet de prendre une décision selon que la condition est vraie ou fausse."
+  },
+  {
+    "ID": "ALG036",
+    "question": "Comment tester si une variable x est supérieure à 10 ?",
+    "options": [
+      "if x > 10:\n    print('Oui')",
+      "while x > 10:\n    print('Oui')",
+      "for x > 10:\n    print('Oui')",
+      "print(x > 10)"
+    ],
+    "answer": 0,
+    "theme": "Algorithme",
+    "explanation": "L’instruction if permet de tester une condition et d’exécuter un bloc lorsque la condition est vraie."
+  },
+  {
+    "ID": "ALG037",
+    "question": "Comment écrire une boucle while qui s’arrête quand x est égal à 5 ?",
+    "options": [
+      "while x = 5:\n    x += 1",
+      "while x != 5:\n    x += 1",
+      "for x != 5:\n    x += 1",
+      "if x != 5:\n    x += 1"
+    ],
+    "answer": 1,
+    "theme": "Algorithme",
+    "explanation": "La boucle 'while' continue tant que x n’est pas égal à 5 et incrémente x à chaque itération."
+  },
+  {
+    "ID": "ALG038",
+    "question": "Que représente généralement le nom 'John Doe' ?",
+    "options": [
+      "Un célèbre informaticien américain",
+      "Le créateur du modèle relationnel",
+      "Un nom fictif utilisé pour désigner une personne inconnue",
+      "Un personnage de roman historique"
+    ],
+    "answer": 2,
+    "theme": "Algorithme",
+    "explanation": "John Doe est un nom générique utilisé dans les pays anglophones pour désigner une personne dont l’identité est inconnue ou doit rester anonyme."
+  },
+  {
+    "ID": "JS001",
+    "question": "Comment afficher 'Hello World' dans la console en JavaScript ?",
+    "options": [
+      "print('Hello World');",
+      "echo('Hello World');",
+      "alert = 'Hello World';",
+      "console.log('Hello World');"
+    ],
+    "answer": 3,
+    "theme": "JavaScript",
+    "explanation": "En JavaScript, 'console.log()' affiche du texte dans la console."
+  },
+  {
+    "ID": "JS002",
+    "question": "Comment créer une variable x contenant 10 ?",
+    "options": [
+      "let x = 10;",
+      "x == 10;",
+      "var x : 10;",
+      "x = int(10);"
+    ],
+    "answer": 0,
+    "theme": "JavaScript",
+    "explanation": "On utilise 'let' pour créer une variable en JavaScript et lui assigner une valeur."
+  },
+  {
+    "ID": "JS003",
+    "question": "Comment créer une constante y valant 20 ?",
+    "options": [
+      "let y = 20;",
+      "const y = 20;",
+      "var y = 20;",
+      "y = 20;"
+    ],
+    "answer": 1,
+    "theme": "JavaScript",
+    "explanation": "'const' crée une variable dont la valeur ne peut pas être modifiée."
+  },
+  {
+    "ID": "JS004",
+    "question": "Comment écrire un commentaire sur une seule ligne ?",
+    "options": [
+      "/* Ceci est un commentaire */",
+      "# Ceci est un commentaire",
+      "// Ceci est un commentaire",
+      "<!-- Ceci est un commentaire -->"
+    ],
+    "answer": 2,
+    "theme": "JavaScript",
+    "explanation": "En JavaScript, un commentaire sur une seule ligne commence par '//'."
+  },
+  {
+    "ID": "JS005",
+    "question": "Comment créer un tableau avec les éléments 1, 2, 3 ?",
+    "options": [
+      "let arr = (1,2,3);",
+      "let arr = {1,2,3};",
+      "arr = 1,2,3;",
+      "let arr = [1,2,3];"
+    ],
+    "answer": 3,
+    "theme": "JavaScript",
+    "explanation": "Les crochets [] permettent de créer un tableau avec plusieurs éléments."
+  },
+  {
+    "ID": "JS006",
+    "question": "Comment créer un tableau vide ?",
+    "options": [
+      "let arr = ();",
+      "let arr = [];",
+      "let arr = {};",
+      "arr = 0;"
+    ],
+    "answer": 1,
+    "theme": "JavaScript",
+    "explanation": "Un tableau vide en JavaScript se crée avec les crochets []."
+  },
+  {
+    "ID": "JS007",
+    "question": "Comment accéder au premier élément d’un tableau arr ?",
+    "options": [
+      "arr[1];",
+      "arr[0];",
+      "arr.first();",
+      "arr.get(0);"
+    ],
+    "answer": 1,
+    "theme": "JavaScript",
+    "explanation": "Les indices des tableaux commencent à 0, donc le premier élément est arr[0]."
+  },
+  {
+    "ID": "JS008",
+    "question": "Comment ajouter un élément 'Alice' à un tableau arr ?",
+    "options": [
+      "arr.add('Alice');",
+      "arr.insert('Alice');",
+      "arr.push('Alice');",
+      "push(arr, 'Alice');"
+    ],
+    "answer": 2,
+    "theme": "JavaScript",
+    "explanation": "La méthode push() ajoute un élément à la fin d’un tableau."
+  },
+  {
+    "ID": "JS009",
+    "question": "Comment tester si x est égal à 10 ?",
+    "options": [
+      "if(x = 10) {}",
+      "while(x == 10) {}",
+      "for(x == 10) {}",
+      "if(x == 10) {}"
+    ],
+    "answer": 3,
+    "theme": "JavaScript",
+    "explanation": "L’opérateur '==' teste l’égalité de valeur en JavaScript."
+  },
+  {
+    "ID": "JS010",
+    "question": "Comment créer une fonction vide nommée maFonction ?",
+    "options": [
+      "function maFonction() {}",
+      "def maFonction() {}",
+      "maFonction() {}",
+      "function = maFonction() {}"
+    ],
+    "answer": 0,
+    "theme": "JavaScript",
+    "explanation": "La syntaxe 'function nomDeFonction() {}' définit une fonction en JavaScript."
+  },
+  {
+    "ID": "JS011",
+    "question": "Comment incrémenter une variable x de 1 ?",
+    "options": [
+      "x += 2;",
+      "x = x + 1;",
+      "x++;--",
+      "x =+ 1;"
+    ],
+    "answer": 1,
+    "theme": "JavaScript",
+    "explanation": "On peut augmenter la valeur de x de 1 en écrivant 'x = x + 1;'."
+  },
+  {
+    "ID": "JS012",
+    "question": "Comment accéder au deuxième élément d’un tableau arr ?",
+    "options": [
+      "arr[0];",
+      "arr.second();",
+      "arr[1];",
+      "arr.get(1);"
+    ],
+    "answer": 2,
+    "theme": "JavaScript",
+    "explanation": "Le deuxième élément d’un tableau est à l’indice 1."
+  },
+  {
+    "ID": "JS013",
+    "question": "Comment tester si une variable arr contient 'Alice' ?",
+    "options": [
+      "if('Alice' in arr) {}",
+      "if(arr.has('Alice')) {}",
+      "arr.contains('Alice');",
+      "if(arr.includes('Alice')) {}"
+    ],
+    "answer": 3,
+    "theme": "JavaScript",
+    "explanation": "La méthode includes() teste si un élément est présent dans un tableau."
+  },
+  {
+    "ID": "JS014",
+    "question": "Comment créer une boucle qui compte de 0 à 4 ?",
+    "options": [
+      "for(let i=0; i<5; i++) {}",
+      "for(let i=1; i<=5; i++) {}",
+      "while(i<5) {}",
+      "do {} while(i<5);"
+    ],
+    "answer": 0,
+    "theme": "JavaScript",
+    "explanation": "La boucle for avec i=0 à i<5 exécute le bloc 5 fois."
+  },
+  {
+    "ID": "JS015",
+    "question": "Comment vérifier si x est supérieur à 10 ?",
+    "options": [
+      "if(x > 10) {}",
+      "if(x == 10) {}",
+      "if(x >= 10) {}",
+      "if(x < 10) {}"
+    ],
+    "answer": 0,
+    "theme": "JavaScript",
+    "explanation": "L’opérateur > permet de vérifier si une valeur est strictement supérieure à une autre."
+  },
+  {
+    "ID": "JS016",
+    "question": "Comment créer une boucle while qui compte jusqu’à 3 ?",
+    "options": [
+      "while(i<=3){ console.log(i); }",
+      "for(i=1;i<=3;i++){}",
+      "let i=1; while(i<=3){ console.log(i); i++; }",
+      "do { console.log(i); } while(i<3);"
+    ],
+    "answer": 2,
+    "theme": "JavaScript",
+    "explanation": "La boucle while nécessite une variable compteur et une incrémentation."
+  },
+  {
+    "ID": "JS017",
+    "question": "Comment vérifier si x est inférieur à 10 ?",
+    "options": [
+      "if(x > 10) {}",
+      "if(x == 10) {}",
+      "if(x <= 10) {}",
+      "if(x < 10) {}"
+    ],
+    "answer": 3,
+    "theme": "JavaScript",
+    "explanation": "L’opérateur '<' teste si x est inférieur à une valeur."
+  },
+  {
+    "ID": "JS018",
+    "question": "Comment exécuter un bloc si une condition est fausse ?",
+    "options": [
+      "else {}",
+      "if() {}",
+      "switch() {}",
+      "while() {}"
+    ],
+    "answer": 0,
+    "theme": "JavaScript",
+    "explanation": "Le bloc else est exécuté lorsque la condition du if est fausse."
+  },
+  {
+    "ID": "JS019",
+    "question": "Comment tester si x est strictement égal à 5 ?",
+    "options": [
+      "if(x === 5) {}",
+      "if(x == 5) {}",
+      "if(x = 5) {}",
+      "if(x != 5) {}"
+    ],
+    "answer": 0,
+    "theme": "JavaScript",
+    "explanation": "L’opérateur === permet de tester une égalité stricte, à la fois sur la valeur et le type."
+  },
+  {
+    "ID": "JS020",
+    "question": "Comment déclarer une variable sans valeur initiale ?",
+    "options": [
+      "let x = ;",
+      "var x = null;",
+      "let x;",
+      "x = ;"
+    ],
+    "answer": 2,
+    "theme": "JavaScript",
+    "explanation": "On peut déclarer une variable avec 'let x;' sans lui assigner de valeur initiale."
+  },
+  {
+    "ID": "JS021",
+    "question": "Comment afficher une alerte avec le texte 'Bonjour' ?",
+    "options": [
+      "console.log('Bonjour');",
+      "print('Bonjour');",
+      "echo('Bonjour');",
+      "alert('Bonjour');"
+    ],
+    "answer": 3,
+    "theme": "JavaScript",
+    "explanation": "La fonction alert() affiche une boîte de dialogue avec un message."
+  },
+  {
+    "ID": "JS022",
+    "question": "Comment convertir un nombre en chaîne de caractères ?",
+    "options": [
+      "String(123);",
+      "123.toString();",
+      "str(123);",
+      "Number(123);"
+    ],
+    "answer": 0,
+    "theme": "JavaScript",
+    "explanation": "La fonction String() convertit un nombre en chaîne de caractères."
+  },
+  {
+    "ID": "JS023",
+    "question": "Comment convertir une chaîne en nombre entier ?",
+    "options": [
+      "Number('123');",
+      "parseInt('123');",
+      "'123'.toInt();",
+      "int('123');"
+    ],
+    "answer": 1,
+    "theme": "JavaScript",
+    "explanation": "parseInt() convertit une chaîne en nombre entier."
+  },
+  {
+    "ID": "JS024",
+    "question": "Comment vérifier si un tableau arr est vide ?",
+    "options": [
+      "arr == [];",
+      "arr === null;",
+      "arr.length === 0;",
+      "arr.isEmpty();"
+    ],
+    "answer": 2,
+    "theme": "JavaScript",
+    "explanation": "Si arr.length est 0, le tableau est vide."
+  },
+  {
+    "ID": "JS025",
+    "question": "Comment créer une boucle qui s’exécute au moins une fois ?",
+    "options": [
+      "while(condition) { }",
+      "for(;;) { }",
+      "loop { }",
+      "do { } while(condition);"
+    ],
+    "answer": 3,
+    "theme": "JavaScript",
+    "explanation": "La boucle do...while exécute toujours le bloc au moins une fois avant de tester la condition."
+  },
+  {
+    "ID": "JS026",
+    "question": "Comment supprimer une propriété 'nom' d’un objet obj ?",
+    "options": [
+      "delete obj.nom;",
+      "obj.remove('nom');",
+      "obj.pop('nom');",
+      "remove obj.nom;"
+    ],
+    "answer": 0,
+    "theme": "JavaScript",
+    "explanation": "L’instruction delete supprime une propriété d’un objet."
+  },
+  {
+    "ID": "JS027",
+    "question": "Comment créer une fonction qui prend un paramètre x et retourne x*2 ?",
+    "options": [
+      "function double(x){ console.log(x*2); }",
+      "function double(x){ return x*2; }",
+      "double(x) = x*2;",
+      "const double = x*2;"
+    ],
+    "answer": 1,
+    "theme": "JavaScript",
+    "explanation": "La fonction doit utiliser return pour renvoyer le résultat."
+  },
+  {
+    "ID": "JS028",
+    "question": "Comment vérifier si x n’est pas égal à 5 ?",
+    "options": [
+      "if(x =! 5) {}",
+      "if(x !== 5) {}",
+      "if(x != 5) {}",
+      "if(x <> 5) {}"
+    ],
+    "answer": 2,
+    "theme": "JavaScript",
+    "explanation": "L’opérateur '!=' teste l’inégalité en valeur."
+  },
+  {
+    "ID": "JS029",
+    "question": "Comment tester si un nombre n est pair ?",
+    "options": [
+      "if(n / 2 === 0) {}",
+      "if(n % 2) {}",
+      "if(n & 2 === 0) {}",
+      "if(n % 2 === 0) {}"
+    ],
+    "answer": 3,
+    "theme": "JavaScript",
+    "explanation": "L’opérateur modulo % teste le reste de la division par 2."
+  },
+  {
+    "ID": "JS030",
+    "question": "Comment tester si un tableau arr contient au moins un élément ?",
+    "options": [
+      "arr.length > 0;",
+      "arr != [];",
+      "arr != null;",
+      "arr.exists();"
+    ],
+    "answer": 0,
+    "theme": "JavaScript",
+    "explanation": "Si arr.length > 0, le tableau contient au moins un élément."
+  },
+  {
+    "ID": "JS031",
+    "question": "Quel mot-clé sert à créer une variable en JavaScript ?",
+    "options": [
+      "varia",
+      "let",
+      "set",
+      "def"
+    ],
+    "answer": 1,
+    "theme": "JavaScript",
+    "explanation": "Le mot-clé 'let' permet de déclarer une variable en JavaScript."
+  },
+  {
+    "ID": "JS032",
+    "question": "Quel mot-clé crée une constante ?",
+    "options": [
+      "let",
+      "var",
+      "const",
+      "fixed"
+    ],
+    "answer": 2,
+    "theme": "JavaScript",
+    "explanation": "Le mot-clé 'const' crée une variable dont la valeur ne peut pas changer."
+  },
+  {
+    "ID": "JS033",
+    "question": "Quel type de données représente du texte ?",
+    "options": [
+      "Nombre",
+      "Booléen",
+      "Objet",
+      "Chaîne"
+    ],
+    "answer": 3,
+    "theme": "JavaScript",
+    "explanation": "Une chaîne (string) contient du texte en JavaScript."
+  },
+  {
+    "ID": "JS034",
+    "question": "Quel type de données peut être vrai ou faux ?",
+    "options": [
+      "Booléen",
+      "Nombre",
+      "Chaîne",
+      "Objet"
+    ],
+    "answer": 0,
+    "theme": "JavaScript",
+    "explanation": "Le type booléen ne peut avoir que les valeurs true ou false."
+  },
+  {
+    "ID": "JS035",
+    "question": "Comment appelle-t-on un regroupement de données ordonnées ?",
+    "options": [
+      "Objet",
+      "Tableau",
+      "Variable",
+      "Fonction"
+    ],
+    "answer": 1,
+    "theme": "JavaScript",
+    "explanation": "Un tableau contient des éléments ordonnés accessibles par index."
+  },
+  {
+    "ID": "JS036",
+    "question": "Quel mot-clé est utilisé pour tester une condition ?",
+    "options": [
+      "for",
+      "while",
+      "if",
+      "let"
+    ],
+    "answer": 2,
+    "theme": "JavaScript",
+    "explanation": "L’instruction 'if' permet d’exécuter un bloc uniquement si la condition est vraie."
+  },
+  {
+    "ID": "JS037",
+    "question": "Quel mot-clé est utilisé pour répéter un bloc tant qu’une condition est vraie ?",
+    "options": [
+      "if",
+      "const",
+      "switch",
+      "while"
+    ],
+    "answer": 3,
+    "theme": "JavaScript",
+    "explanation": "La boucle 'while' répète un bloc tant que la condition est vraie."
+  },
+  {
+    "ID": "JS038",
+    "question": "Comment appelle-t-on un bloc de code réutilisable ?",
+    "options": [
+      "Fonction",
+      "Objet",
+      "Variable",
+      "Tableau"
+    ],
+    "answer": 0,
+    "theme": "JavaScript",
+    "explanation": "Une fonction est un bloc de code que l’on peut appeler plusieurs fois."
+  },
+  {
+    "ID": "JS039",
+    "question": "Quel opérateur teste l’égalité stricte (valeur et type) ?",
+    "options": [
+      "==",
+      "===",
+      "=",
+      "!="
+    ],
+    "answer": 1,
+    "theme": "JavaScript",
+    "explanation": "L’opérateur '===' teste si deux valeurs sont égales et du même type."
+  },
+  {
+    "ID": "JS040",
+    "question": "Quel opérateur teste si une valeur est différente ?",
+    "options": [
+      "!=",
+      "===",
+      "==",
+      "="
+    ],
+    "answer": 0,
+    "theme": "JavaScript",
+    "explanation": "L’opérateur '!=' teste si deux valeurs sont différentes."
+  },
+  {
+    "ID": "JS041",
+    "question": "Quel opérateur vérifie si une valeur est inférieure à une autre ?",
+    "options": [
+      "<",
+      ">",
+      ">=",
+      "<="
+    ],
+    "answer": 0,
+    "theme": "JavaScript",
+    "explanation": "L’opérateur < permet de vérifier si une valeur est inférieure à une autre."
+  },
+  {
+    "ID": "JS042",
+    "question": "Quel opérateur vérifie si une valeur est supérieure à une autre ?",
+    "options": [
+      "<=",
+      ">",
+      "<",
+      ">="
+    ],
+    "answer": 1,
+    "theme": "JavaScript",
+    "explanation": "L’opérateur '>' teste si une valeur est supérieure à une autre."
+  },
+  {
+    "ID": "JS043",
+    "question": "Quel type de données représente un nombre entier ou décimal ?",
+    "options": [
+      "Chaîne",
+      "Nombre",
+      "Booléen",
+      "Objet"
+    ],
+    "answer": 1,
+    "theme": "JavaScript",
+    "explanation": "Le type nombre (Number) représente un entier ou un nombre à virgule."
+  },
+  {
+    "ID": "JS044",
+    "question": "Quel mot-clé permet de déclarer une variable qui peut changer de valeur ?",
+    "options": [
+      "const",
+      "varia",
+      "let",
+      "final"
+    ],
+    "answer": 2,
+    "theme": "JavaScript",
+    "explanation": "Le mot-clé 'let' permet de déclarer une variable dont la valeur peut changer."
+  },
+  {
+    "ID": "JS045",
+    "question": "Quel mot-clé permet de déclarer une variable dont la valeur ne change pas ?",
+    "options": [
+      "let",
+      "var",
+      "final",
+      "const"
+    ],
+    "answer": 3,
+    "theme": "JavaScript",
+    "explanation": "Le mot-clé 'const' crée une constante dont la valeur ne peut pas être modifiée."
+  },
+  {
+    "ID": "JS046",
+    "question": "Quel mot-clé permet d’exécuter un bloc seulement si une condition est vraie ?",
+    "options": [
+      "if",
+      "for",
+      "while",
+      "switch"
+    ],
+    "answer": 0,
+    "theme": "JavaScript",
+    "explanation": "L’instruction 'if' exécute le bloc uniquement si la condition est vraie."
+  },
+  {
+    "ID": "JS047",
+    "question": "Quel mot-clé permet de répéter un bloc tant qu’une condition est vraie ?",
+    "options": [
+      "if",
+      "while",
+      "switch",
+      "function"
+    ],
+    "answer": 1,
+    "theme": "JavaScript",
+    "explanation": "La boucle 'while' répète un bloc tant que la condition reste vraie."
+  },
+  {
+    "ID": "JS048",
+    "question": "Quel mot-clé permet d’exécuter un bloc un nombre précis de fois ?",
+    "options": [
+      "while",
+      "if",
+      "for",
+      "switch"
+    ],
+    "answer": 2,
+    "theme": "JavaScript",
+    "explanation": "La boucle 'for' permet de répéter un bloc un nombre exact de fois."
+  },
+  {
+    "ID": "JS049",
+    "question": "Quel type de données représente du texte ?",
+    "options": [
+      "Nombre",
+      "Booléen",
+      "Objet",
+      "Chaîne"
+    ],
+    "answer": 3,
+    "theme": "JavaScript",
+    "explanation": "Une chaîne (string) contient des caractères ou du texte."
+  },
+  {
+    "ID": "SQL001",
+    "question": "Que signifie SQL ?",
+    "options": [
+      "Structured Query Language",
+      "Simple Query List",
+      "Standard Question Language",
+      "Sequential Query Language"
+    ],
+    "answer": 0,
+    "theme": "SQL",
+    "explanation": "SQL signifie 'Structured Query Language', le langage standard pour gérer les bases de données relationnelles."
+  },
+  {
+    "ID": "SQL002",
+    "question": "Quelle commande sert à récupérer des données d'une table ?",
+    "options": [
+      "INSERT",
+      "SELECT",
+      "UPDATE",
+      "DELETE"
+    ],
+    "answer": 1,
+    "theme": "SQL",
+    "explanation": "La commande SELECT permet de récupérer des données dans une table."
+  },
+  {
+    "ID": "SQL003",
+    "question": "Quelle commande sert à ajouter une ligne dans une table ?",
+    "options": [
+      "SELECT",
+      "UPDATE",
+      "INSERT",
+      "DELETE"
+    ],
+    "answer": 2,
+    "theme": "SQL",
+    "explanation": "INSERT INTO permet d’ajouter une nouvelle ligne dans une table."
+  },
+  {
+    "ID": "SQL004",
+    "question": "Quelle commande sert à modifier une ligne existante ?",
+    "options": [
+      "INSERT",
+      "DELETE",
+      "SELECT",
+      "UPDATE"
+    ],
+    "answer": 3,
+    "theme": "SQL",
+    "explanation": "UPDATE permet de modifier les données existantes dans une table."
+  },
+  {
+    "ID": "SQL005",
+    "question": "Quelle commande sert à supprimer une ligne ?",
+    "options": [
+      "DELETE",
+      "UPDATE",
+      "INSERT",
+      "SELECT"
+    ],
+    "answer": 0,
+    "theme": "SQL",
+    "explanation": "DELETE FROM supprime une ou plusieurs lignes d’une table."
+  },
+  {
+    "ID": "SQL006",
+    "question": "Quelle clause permet de filtrer les résultats d’une requête ?",
+    "options": [
+      "ORDER BY",
+      "WHERE",
+      "GROUP BY",
+      "HAVING"
+    ],
+    "answer": 1,
+    "theme": "SQL",
+    "explanation": "La clause WHERE permet de sélectionner uniquement les lignes qui respectent une condition."
+  },
+  {
+    "ID": "SQL007",
+    "question": "Quelle clause permet de trier les résultats d’une requête ?",
+    "options": [
+      "WHERE",
+      "GROUP BY",
+      "ORDER BY",
+      "HAVING"
+    ],
+    "answer": 2,
+    "theme": "SQL",
+    "explanation": "ORDER BY permet de trier les résultats par une ou plusieurs colonnes."
+  },
+  {
+    "ID": "SQL008",
+    "question": "Quelle clause permet de regrouper les résultats par une colonne ?",
+    "options": [
+      "WHERE",
+      "ORDER BY",
+      "HAVING",
+      "GROUP BY"
+    ],
+    "answer": 3,
+    "theme": "SQL",
+    "explanation": "GROUP BY regroupe les lignes ayant la même valeur dans une colonne."
+  },
+  {
+    "ID": "SQL009",
+    "question": "Quelle clause permet de filtrer les groupes créés par GROUP BY ?",
+    "options": [
+      "HAVING",
+      "WHERE",
+      "ORDER BY",
+      "LIMIT"
+    ],
+    "answer": 0,
+    "theme": "SQL",
+    "explanation": "HAVING filtre les groupes après l’application de GROUP BY."
+  },
+  {
+    "ID": "SQL010",
+    "question": "Comment récupérer toutes les colonnes d’une table ?",
+    "options": [
+      "*",
+      "SELECT *",
+      "ALL",
+      "COLUMNS"
+    ],
+    "answer": 1,
+    "theme": "SQL",
+    "explanation": "Le symbole '*' est utilisé dans SELECT pour récupérer toutes les colonnes."
+  },
+  {
+    "ID": "SQL011",
+    "question": "Quelle commande crée une nouvelle table ?",
+    "options": [
+      "INSERT TABLE",
+      "NEW TABLE",
+      "CREATE TABLE",
+      "MAKE TABLE"
+    ],
+    "answer": 2,
+    "theme": "SQL",
+    "explanation": "CREATE TABLE permet de créer une nouvelle table dans la base de données."
+  },
+  {
+    "ID": "SQL012",
+    "question": "Quelle commande supprime une table existante ?",
+    "options": [
+      "DELETE TABLE",
+      "REMOVE TABLE",
+      "TRUNCATE TABLE",
+      "DROP TABLE"
+    ],
+    "answer": 3,
+    "theme": "SQL",
+    "explanation": "DROP TABLE supprime complètement une table et ses données."
+  },
+  {
+    "ID": "SQL013",
+    "question": "Quelle commande supprime toutes les lignes d’une table sans supprimer la table ?",
+    "options": [
+      "TRUNCATE",
+      "DELETE",
+      "DROP",
+      "CLEAR"
+    ],
+    "answer": 0,
+    "theme": "SQL",
+    "explanation": "TRUNCATE supprime toutes les lignes mais conserve la structure de la table."
+  },
+  {
+    "ID": "SQL014",
+    "question": "Comment limiter le nombre de résultats retournés par une requête ?",
+    "options": [
+      "MAX",
+      "LIMIT",
+      "TOP",
+      "ROWS"
+    ],
+    "answer": 1,
+    "theme": "SQL",
+    "explanation": "LIMIT permet de définir un nombre maximal de lignes à retourner."
+  },
+  {
+    "ID": "SQL015",
+    "question": "Comment faire une jointure entre deux tables ?",
+    "options": [
+      "MERGE",
+      "UNION",
+      "JOIN",
+      "LINK"
+    ],
+    "answer": 2,
+    "theme": "SQL",
+    "explanation": "JOIN permet de combiner les lignes de deux tables selon une condition."
+  },
+  {
+    "ID": "SQL016",
+    "question": "Quelle jointure récupère uniquement les lignes correspondantes dans les deux tables ?",
+    "options": [
+      "LEFT JOIN",
+      "RIGHT JOIN",
+      "FULL JOIN",
+      "INNER JOIN"
+    ],
+    "answer": 3,
+    "theme": "SQL",
+    "explanation": "INNER JOIN retourne uniquement les lignes présentes dans les deux tables."
+  },
+  {
+    "ID": "SQL017",
+    "question": "Quelle jointure récupère toutes les lignes de la table de gauche et les correspondances de la table de droite ?",
+    "options": [
+      "LEFT JOIN",
+      "INNER JOIN",
+      "RIGHT JOIN",
+      "FULL JOIN"
+    ],
+    "answer": 0,
+    "theme": "SQL",
+    "explanation": "LEFT JOIN retourne toutes les lignes de la table de gauche et les lignes correspondantes de la table de droite."
+  },
+  {
+    "ID": "SQL018",
+    "question": "Comment combiner les résultats de deux SELECT ?",
+    "options": [
+      "JOIN",
+      "UNION",
+      "MERGE",
+      "COMBINE"
+    ],
+    "answer": 1,
+    "theme": "SQL",
+    "explanation": "UNION combine les résultats de deux requêtes SELECT en supprimant les doublons."
+  },
+  {
+    "ID": "SQL020",
+    "question": "Quelle fonction permet de compter le nombre de lignes ?",
+    "options": [
+      "SUM",
+      "TOTAL",
+      "COUNT",
+      "NUMBER"
+    ],
+    "answer": 2,
+    "theme": "SQL",
+    "explanation": "COUNT() retourne le nombre de lignes d’une table ou d’un résultat de requête."
+  },
+  {
+    "ID": "SQL021",
+    "question": "Quelle fonction permet de calculer la somme d’une colonne ?",
+    "options": [
+      "TOTAL",
+      "ADD",
+      "COUNT",
+      "SUM"
+    ],
+    "answer": 3,
+    "theme": "SQL",
+    "explanation": "SUM() additionne toutes les valeurs d’une colonne numérique."
+  },
+  {
+    "ID": "SQL022",
+    "question": "Quelle fonction permet de trouver la valeur maximale d’une colonne ?",
+    "options": [
+      "MAX",
+      "MIN",
+      "TOP",
+      "GREATEST"
+    ],
+    "answer": 0,
+    "theme": "SQL",
+    "explanation": "MAX() retourne la plus grande valeur d’une colonne."
+  },
+  {
+    "ID": "SQL023",
+    "question": "Quelle fonction permet de trouver la valeur minimale d’une colonne ?",
+    "options": [
+      "MAX",
+      "MIN",
+      "LEAST",
+      "BOTTOM"
+    ],
+    "answer": 1,
+    "theme": "SQL",
+    "explanation": "MIN() retourne la plus petite valeur d’une colonne."
+  },
+  {
+    "ID": "SQL024",
+    "question": "Quelle fonction retourne la moyenne d’une colonne ?",
+    "options": [
+      "MEAN",
+      "SUM",
+      "AVG",
+      "MEDIAN"
+    ],
+    "answer": 2,
+    "theme": "SQL",
+    "explanation": "AVG() calcule la moyenne des valeurs numériques d’une colonne."
+  },
+  {
+    "ID": "SQL025",
+    "question": "Quelle commande renomme une colonne dans le résultat d’une requête (Alias) ?",
+    "options": [
+      "RENAME",
+      "ALIAS",
+      "LABEL",
+      "AS"
+    ],
+    "answer": 3,
+    "theme": "SQL",
+    "explanation": "AS permet de donner un alias à une colonne ou une table."
+  },
+  {
+    "ID": "SQL026",
+    "question": "Quelle commande change le nom d’une table ?",
+    "options": [
+      "ALTER TABLE ... RENAME TO",
+      "RENAME TABLE",
+      "UPDATE TABLE NAME",
+      "MODIFY TABLE"
+    ],
+    "answer": 0,
+    "theme": "SQL",
+    "explanation": "ALTER TABLE suivi de RENAME TO permet de renommer une table existante."
+  },
+  {
+    "ID": "SQL027",
+    "question": "Quelle commande ajoute une colonne à une table existante ?",
+    "options": [
+      "UPDATE TABLE ... ADD",
+      "ALTER TABLE ... ADD",
+      "INSERT INTO TABLE ... ADD",
+      "CREATE COLUMN"
+    ],
+    "answer": 1,
+    "theme": "SQL",
+    "explanation": "ALTER TABLE ... ADD COLUMN permet d’ajouter une colonne à une table existante."
+  },
+  {
+    "ID": "SQL028",
+    "question": "Quelle commande supprime une colonne d’une table ?",
+    "options": [
+      "DELETE COLUMN",
+      "REMOVE COLUMN",
+      "ALTER TABLE ... DROP COLUMN",
+      "ALTER TABLE ... REMOVE"
+    ],
+    "answer": 2,
+    "theme": "SQL",
+    "explanation": "ALTER TABLE ... DROP COLUMN supprime une colonne d’une table."
+  },
+  {
+    "ID": "SQL029",
+    "question": "Quelle clause est utilisée pour limiter les résultats retournés ?",
+    "options": [
+      "TOP",
+      "MAXROWS",
+      "RESTRICT",
+      "LIMIT"
+    ],
+    "answer": 3,
+    "theme": "SQL",
+    "explanation": "LIMIT permet de spécifier le nombre maximum de lignes à retourner."
+  },
+  {
+    "ID": "SQL030",
+    "question": "Quelle clause est utilisée pour trier les résultats par ordre croissant ou décroissant ?",
+    "options": [
+      "ORDER BY",
+      "SORT BY",
+      "GROUP BY",
+      "FILTER BY"
+    ],
+    "answer": 0,
+    "theme": "SQL",
+    "explanation": "ORDER BY permet de trier les résultats selon une ou plusieurs colonnes."
+  },
+  {
+    "ID": "SQL031",
+    "question": "Quelle commande sert à ajouter une clé primaire à une table ?",
+    "options": [
+      "UNIQUE",
+      "PRIMARY KEY",
+      "FOREIGN KEY",
+      "INDEX"
+    ],
+    "answer": 1,
+    "theme": "SQL",
+    "explanation": "PRIMARY KEY définit une colonne comme identifiant unique pour la table."
+  },
+  {
+    "ID": "SQL032",
+    "question": "Quelle commande définit une relation entre deux tables ?",
+    "options": [
+      "PRIMARY KEY",
+      "JOIN",
+      "FOREIGN KEY",
+      "LINK"
+    ],
+    "answer": 2,
+    "theme": "SQL",
+    "explanation": "FOREIGN KEY crée une relation entre une colonne d’une table et la clé primaire d’une autre table."
+  },
+  {
+    "ID": "SQL033",
+    "question": "Quelle requête sélectionne toutes les colonnes de la table 'Etudiants' ?",
+    "options": [
+      "SELECT ALL FROM Etudiants;",
+      "GET * FROM Etudiants;",
+      "SELECT ALL COLUMNS FROM Etudiants;",
+      "SELECT * FROM Etudiants;"
+    ],
+    "answer": 3,
+    "theme": "SQL",
+    "explanation": "Le symbole '*' dans SELECT permet de récupérer toutes les colonnes d’une table."
+  },
+  {
+    "ID": "SQL034",
+    "question": "Quelle requête insère une ligne dans la table 'Etudiants' avec nom='Paul' et age=20 ?",
+    "options": [
+      "INSERT INTO Etudiants (nom, age) VALUES ('Paul', 20);",
+      "ADD INTO Etudiants VALUES ('Paul', 20);",
+      "INSERT Etudiants VALUES ('Paul', 20);",
+      "INSERT (nom, age) INTO Etudiants ('Paul', 20);"
+    ],
+    "answer": 0,
+    "theme": "SQL",
+    "explanation": "INSERT INTO ... VALUES permet d’ajouter une nouvelle ligne dans la table."
+  },
+  {
+    "ID": "SQL035",
+    "question": "Quelle requête met à jour l’âge à 21 pour l’étudiant dont nom='Paul' ?",
+    "options": [
+      "MODIFY Etudiants SET age=21 WHERE nom='Paul';",
+      "UPDATE Etudiants SET age=21 WHERE nom='Paul';",
+      "CHANGE Etudiants age=21 WHERE nom='Paul';",
+      "UPDATE Etudiants age=21 WHERE nom='Paul';"
+    ],
+    "answer": 1,
+    "theme": "SQL",
+    "explanation": "UPDATE ... SET ... WHERE permet de modifier les données existantes."
+  },
+  {
+    "ID": "SQL036",
+    "question": "Quelle requête supprime les lignes de la table 'Etudiants' dont nom='Paul' ?",
+    "options": [
+      "REMOVE FROM Etudiants WHERE nom='Paul';",
+      "DROP FROM Etudiants WHERE nom='Paul';",
+      "DELETE FROM Etudiants WHERE nom='Paul';",
+      "DELETE Etudiants WHERE nom='Paul';"
+    ],
+    "answer": 2,
+    "theme": "SQL",
+    "explanation": "DELETE FROM ... WHERE supprime les lignes qui satisfont la condition."
+  },
+  {
+    "ID": "SQL037",
+    "question": "Quelle requête crée une table 'Etudiants' avec colonnes id, nom, age ?",
+    "options": [
+      "MAKE TABLE Etudiants (id INT, nom VARCHAR(50), age INT);",
+      "CREATE Etudiants (id INT, nom VARCHAR(50), age INT);",
+      "NEW TABLE Etudiants (id INT, nom VARCHAR(50), age INT);",
+      "CREATE TABLE Etudiants (id INT, nom VARCHAR(50), age INT);"
+    ],
+    "answer": 3,
+    "theme": "SQL",
+    "explanation": "CREATE TABLE permet de créer une nouvelle table avec ses colonnes."
+  },
+  {
+    "ID": "SQL038",
+    "question": "Quelle requête supprime complètement la table 'Etudiants' ?",
+    "options": [
+      "DROP TABLE Etudiants;",
+      "DELETE TABLE Etudiants;",
+      "REMOVE TABLE Etudiants;",
+      "TRUNCATE TABLE Etudiants;"
+    ],
+    "answer": 0,
+    "theme": "SQL",
+    "explanation": "DROP TABLE supprime la table et toutes ses données."
+  },
+  {
+    "ID": "SQL039",
+    "question": "Quelle requête trie les étudiants par âge croissant ?",
+    "options": [
+      "SELECT * FROM Etudiants SORT BY age ASC;",
+      "SELECT * FROM Etudiants ORDER BY age ASC;",
+      "SELECT * FROM Etudiants ORDER age ASC;",
+      "SELECT * FROM Etudiants GROUP BY age ASC;"
+    ],
+    "answer": 1,
+    "theme": "SQL",
+    "explanation": "ORDER BY age ASC trie les résultats par âge croissant."
+  },
+  {
+    "ID": "SQL040",
+    "question": "Quelle requête trie les étudiants par âge décroissant ?",
+    "options": [
+      "SELECT * FROM Etudiants SORT BY age DESC;",
+      "SELECT * FROM Etudiants ORDER age DESC;",
+      "SELECT * FROM Etudiants ORDER BY age DESC;",
+      "SELECT * FROM Etudiants GROUP BY age DESC;"
+    ],
+    "answer": 2,
+    "theme": "SQL",
+    "explanation": "ORDER BY age DESC permet de trier les résultats par âge décroissant."
+  },
+  {
+    "ID": "SQL041",
+    "question": "Quelle requête compte le nombre d’étudiants dans la table ?",
+    "options": [
+      "SELECT SUM(*) FROM Etudiants;",
+      "SELECT TOTAL(*) FROM Etudiants;",
+      "SELECT NUMBER(*) FROM Etudiants;",
+      "SELECT COUNT(*) FROM Etudiants;"
+    ],
+    "answer": 3,
+    "theme": "SQL",
+    "explanation": "COUNT(*) retourne le nombre de lignes d’une table."
+  },
+  {
+    "ID": "SQL042",
+    "question": "Quelle requête calcule l’âge moyen des étudiants ?",
+    "options": [
+      "SELECT AVG(age) FROM Etudiants;",
+      "SELECT SUM(age) FROM Etudiants;",
+      "SELECT MEDIAN(age) FROM Etudiants;",
+      "SELECT TOTAL(age) FROM Etudiants;"
+    ],
+    "answer": 0,
+    "theme": "SQL",
+    "explanation": "AVG(age) calcule la moyenne des valeurs de la colonne age."
+  },
+  {
+    "ID": "SQL043",
+    "question": "Quelle requête regroupe les étudiants par âge ?",
+    "options": [
+      "SELECT age, COUNT(*) FROM Etudiants ORDER BY age;",
+      "SELECT age, COUNT(*) FROM Etudiants GROUP BY age;",
+      "SELECT age, COUNT(*) FROM Etudiants SORT BY age;",
+      "SELECT age, COUNT(*) FROM Etudiants WHERE age;"
+    ],
+    "answer": 1,
+    "theme": "SQL",
+    "explanation": "GROUP BY permet de regrouper les lignes selon une colonne, ici l’âge."
+  },
+  {
+    "ID": "SQL044",
+    "question": "Quelle requête filtre les étudiants dont âge>20 ?",
+    "options": [
+      "SELECT * FROM Etudiants HAVING age>20;",
+      "SELECT * FROM Etudiants FILTER age>20;",
+      "SELECT * FROM Etudiants WHERE age>20;",
+      "SELECT * FROM Etudiants LIMIT age>20;"
+    ],
+    "answer": 2,
+    "theme": "SQL",
+    "explanation": "WHERE permet de filtrer les lignes selon une condition."
+  },
+  {
+    "ID": "SQL045",
+    "question": "Quelle requête récupère les étudiants dont le nom commence par 'P' ?",
+    "options": [
+      "SELECT * FROM Etudiants WHERE nom='P*';",
+      "SELECT * FROM Etudiants WHERE nom START 'P';",
+      "SELECT * FROM Etudiants WHERE nom MATCH 'P%';",
+      "SELECT * FROM Etudiants WHERE nom LIKE 'P%';"
+    ],
+    "answer": 3,
+    "theme": "SQL",
+    "explanation": "LIKE 'P%' sélectionne toutes les valeurs qui commencent par 'P'."
+  },
+  {
+    "ID": "SQL046",
+    "question": "Quelle requête récupère les étudiants âgés de 18 à 25 ans ?",
+    "options": [
+      "SELECT * FROM Etudiants WHERE age BETWEEN 18 AND 25;",
+      "SELECT * FROM Etudiants WHERE age>=18 AND age<=25;",
+      "SELECT * FROM Etudiants WHERE age IN (18,25);",
+      "SELECT * FROM Etudiants WHERE age RANGE 18-25;"
+    ],
+    "answer": 0,
+    "theme": "SQL",
+    "explanation": "BETWEEN permet de sélectionner les valeurs comprises entre deux bornes."
+  },
+  {
+    "ID": "SQL047",
+    "question": "Quelle requête récupère les étudiants dont l’âge n’est pas 20 ?",
+    "options": [
+      "SELECT * FROM Etudiants WHERE age <> 20;",
+      "SELECT * FROM Etudiants WHERE age NOT 20;",
+      "SELECT * FROM Etudiants WHERE age != 20;",
+      "SELECT * FROM Etudiants WHERE age <> '20';"
+    ],
+    "answer": 0,
+    "theme": "SQL",
+    "explanation": "L’opérateur <> (ou != selon le SGBD) permet de tester qu’une valeur est différente d’une autre."
+  },
+  {
+    "ID": "SQL048",
+    "question": "Quelle requête récupère les étudiants dont le nom est 'Paul' ou 'Marie' ?",
+    "options": [
+      "SELECT * FROM Etudiants WHERE nom = 'Paul' OR 'Marie';",
+      "SELECT * FROM Etudiants WHERE nom = 'Paul','Marie';",
+      "SELECT * FROM Etudiants WHERE nom IN ('Paul','Marie');",
+      "SELECT * FROM Etudiants WHERE nom = ('Paul','Marie');"
+    ],
+    "answer": 2,
+    "theme": "SQL",
+    "explanation": "IN permet de vérifier si une colonne correspond à l’une des valeurs listées."
+  },
+  {
+    "ID": "SQL049",
+    "question": "Quelle requête récupère les étudiants dont le nom contient 'an' ?",
+    "options": [
+      "SELECT * FROM Etudiants WHERE nom CONTAINS 'an';",
+      "SELECT * FROM Etudiants WHERE nom HAS 'an';",
+      "SELECT * FROM Etudiants WHERE nom MATCH 'an';",
+      "SELECT * FROM Etudiants WHERE nom LIKE '%an%';"
+    ],
+    "answer": 3,
+    "theme": "SQL",
+    "explanation": "LIKE '%an%' récupère toutes les valeurs contenant 'an'."
+  },
+  {
+    "ID": "SQL050",
+    "question": "Quelle requête limite les résultats à 5 étudiants ?",
+    "options": [
+      "SELECT * FROM Etudiants LIMIT 5;",
+      "SELECT * FROM Etudiants TOP 5;",
+      "SELECT * FROM Etudiants MAX 5;",
+      "SELECT * FROM Etudiants FETCH 5;"
+    ],
+    "answer": 0,
+    "theme": "SQL",
+    "explanation": "LIMIT 5 renvoie seulement les 5 premières lignes du résultat."
+  },
+  {
+    "ID": "SQL051",
+    "question": "Quelle requête met à jour le nom en 'Jean' pour idEtudiant=1 ?",
+    "options": [
+      "MODIFY Etudiants SET nom='Jean' WHERE idEtudiant=1;",
+      "UPDATE Etudiants SET nom='Jean' WHERE idEtudiant=1;",
+      "CHANGE Etudiants SET nom='Jean' WHERE idEtudiant=1;",
+      "UPDATE Etudiants nom='Jean' WHERE idEtudiant=1;"
+    ],
+    "answer": 1,
+    "theme": "SQL",
+    "explanation": "UPDATE ... SET ... WHERE permet de modifier la valeur d’une colonne pour certaines lignes."
+  },
+  {
+    "ID": "SQL052",
+    "question": "Quelle requête compte le nombre d’étudiants dont l’âge > 20 ?",
+    "options": [
+      "SELECT SUM(*) FROM Etudiants WHERE age>20;",
+      "SELECT TOTAL(*) FROM Etudiants WHERE age>20;",
+      "SELECT COUNT(*) FROM Etudiants WHERE age>20;",
+      "SELECT NUMBER(*) FROM Etudiants WHERE age>20;"
+    ],
+    "answer": 2,
+    "theme": "SQL",
+    "explanation": "COUNT(*) retourne le nombre de lignes satisfaisant la condition."
+  },
+  {
+    "ID": "SQL053",
+    "question": "Quelle requête ajoute une colonne 'email' de type VARCHAR(100) à la table Etudiants ?",
+    "options": [
+      "INSERT COLUMN email VARCHAR(100) INTO Etudiants;",
+      "UPDATE TABLE Etudiants ADD email VARCHAR(100);",
+      "CREATE COLUMN email VARCHAR(100) IN Etudiants;",
+      "ALTER TABLE Etudiants ADD COLUMN email VARCHAR(100);"
+    ],
+    "answer": 3,
+    "theme": "SQL",
+    "explanation": "ALTER TABLE ... ADD COLUMN permet d’ajouter une nouvelle colonne."
+  },
+  {
+    "ID": "SQL054",
+    "question": "Quelle requête sélectionne les étudiants dont le nom ne commence pas par 'A' ?",
+    "options": [
+      "SELECT * FROM Etudiants WHERE nom NOT LIKE 'A%';",
+      "SELECT * FROM Etudiants WHERE nom != 'A%';",
+      "SELECT * FROM Etudiants WHERE nom <> 'A%';",
+      "SELECT * FROM Etudiants WHERE nom NOT='A%';"
+    ],
+    "answer": 0,
+    "theme": "SQL",
+    "explanation": "NOT LIKE 'A%' permet de sélectionner les noms qui ne commencent pas par 'A'."
+  },
+  {
+    "ID": "SQL055",
+    "question": "À quoi sert principalement le langage SQL ?",
+    "options": [
+      "À créer des interfaces graphiques",
+      "À gérer et interroger des bases de données",
+      "À concevoir des sites web statiques",
+      "À compiler des programmes en langage machine"
+    ],
+    "answer": 1,
+    "theme": "SQL",
+    "explanation": "SQL est utilisé pour manipuler, interroger et gérer les données dans une base de données relationnelle."
+  },
+  {
+    "ID": "SQL056",
+    "question": "Quel est l’intérêt principal d’utiliser SQL dans un système d’information ?",
+    "options": [
+      "Créer automatiquement des applications complètes",
+      "Gérer l’apparence visuelle des données",
+      "Permettre la manipulation structurée et fiable des données",
+      "Contrôler le matériel informatique d'un serveur"
+    ],
+    "answer": 2,
+    "theme": "SQL",
+    "explanation": "SQL est conçu pour interroger, organiser et modifier les données de manière structurée et cohérente dans une base relationnelle."
+  },
+  {
+    "ID": "SQL057",
+    "question": "Qu'est-ce qui caractérise une base de données relationnelle ?",
+    "options": [
+      "Elle stocke les données sous forme de fichiers texte indépendants",
+      "Elle n’autorise que le stockage de données numériques",
+      "Elle ne peut fonctionner qu’avec un seul utilisateur",
+      "Elle organise les données en tables liées par des relations"
+    ],
+    "answer": 3,
+    "theme": "SQL",
+    "explanation": "Une base de données relationnelle structure les données en tables reliées entre elles par des clés, ce qui facilite les liens et les requêtes complexes."
+  },
+  {
+    "ID": "SQL058",
+    "question": "Qui est considéré comme le créateur du modèle relationnel utilisé dans les bases de données relationnelles ?",
+    "options": [
+      "Edgar F. Codd",
+      "John Doe",
+      "Dennis Ritchie",
+      "Loick Walle"
+    ],
+    "answer": 0,
+    "theme": "SQL",
+    "explanation": "Edgar F. Codd, chercheur chez IBM, a défini le modèle relationnel en 1970, fondement des bases de données relationnelles modernes."
+  },
+  {
+    "ID": "SQL059",
+    "question": "Dans une base de données relationnelle, comment les données sont-elles généralement structurées ?",
+    "options": [
+      "Sous forme d’arbres hiérarchiques interdépendants",
+      "En tables composées de lignes et de colonnes",
+      "Sous forme de blocs binaires non organisés",
+      "En graphiques connectés représentant des nœuds"
+    ],
+    "answer": 1,
+    "theme": "SQL",
+    "explanation": "Les bases de données relationnelles organisent les données en tables, chaque ligne représentant un enregistrement et chaque colonne une propriété."
+  },
+  {
+    "ID": "SQL060",
+    "question": "À quoi sert une clé primaire dans une table SQL ?",
+    "options": [
+      "À chiffrer les données sensibles automatiquement",
+      "À accélérer l'affichage des colonnes dans un logiciel",
+      "À identifier de manière unique chaque ligne de la table",
+      "À créer une copie de sauvegarde de la table"
+    ],
+    "answer": 2,
+    "theme": "SQL",
+    "explanation": "Une clé primaire garantit l’unicité de chaque enregistrement et permet d’identifier clairement chaque ligne dans une table."
+  },
+  {
+    "ID": "SQL061",
+    "question": "Quel est le rôle d’une clé étrangère (foreign key) dans une table SQL ?",
+    "options": [
+      "À identifier de manière unique chaque ligne de la table",
+      "À créer automatiquement une nouvelle table liée",
+      "À chiffrer les données transférées entre tables",
+      "À établir un lien entre deux tables en référant à une clé primaire"
+    ],
+    "answer": 3,
+    "theme": "SQL",
+    "explanation": "Une clé étrangère crée une relation entre deux tables en faisant référence à la clé primaire d’une autre table, assurant l’intégrité référentielle."
+  },
+  {
+    "ID": "SQL062",
+    "question": "Quel est le rôle d’une table d’association dans une base de données SQL ?",
+    "options": [
+      "Relier deux tables dans une relation plusieurs-à-plusieurs",
+      "Stocker uniquement des valeurs numériques pour les calculs",
+      "Remplacer la clé primaire d’une table principale",
+      "Afficher graphiquement les relations entre les données"
+    ],
+    "answer": 0,
+    "theme": "SQL",
+    "explanation": "Une table d’association est utilisée pour gérer les relations plusieurs-à-plusieurs (Many To Many) entre deux tables en stockant les références de leurs clés primaires."
+  },
+  {
+    "ID": "SQL063",
+    "question": "Que signifie l’acronyme SGBD ?",
+    "options": [
+      "Système Général de Base de Données",
+      "Système de Gestion de Bases de Données",
+      "Structure Graphique de Base de Données",
+      "Sécurité et Gestion des Bases de Données"
+    ],
+    "answer": 1,
+    "theme": "SQL",
+    "explanation": "SGBD signifie Système de Gestion de Bases de Données. Il s’agit d’un logiciel qui permet de créer, gérer et interroger des bases de données."
+  },
+  {
+    "ID": "SQL064",
+    "question": "Quels sont les principaux sous-langages du SQL ?",
+    "options": [
+      "HTML, CSS, JavaScript, PHP",
+      "C, C++, Java, Python",
+      "DDL (Data Definition Language), DML (Data Manipulation Language), DCL (Data Control Language), TCL (Transaction Control Language)",
+      "REST, SOAP, GraphQL, gRPC"
+    ],
+    "answer": 2,
+    "theme": "SQL",
+    "explanation": "Le SQL se divise en sous-langages : DDL pour définir la structure des bases, DML pour manipuler les données, DCL pour gérer les droits, et TCL pour contrôler les transactions."
+  },
+  {
+    "ID": "SQL065",
+    "question": "Quel est le rôle principal du DQL (Data Query Language) en SQL ?",
+    "options": [
+      "Créer et modifier la structure des tables",
+      "Gérer les droits des utilisateurs sur la base",
+      "Contrôler les transactions et validations des opérations",
+      "Interroger et récupérer des données dans la base"
+    ],
+    "answer": 3,
+    "theme": "SQL",
+    "explanation": "Le DQL est utilisé pour interroger la base de données, généralement avec la commande SELECT, afin de récupérer les données selon différents critères."
+  },
+  {
+    "ID": "SQL066",
+    "question": "Quel est le rôle principal du DDL (Data Definition Language) en SQL ?",
+    "options": [
+      "Définir et modifier la structure des objets de la base de données (tables, index, vues…)",
+      "Interroger et récupérer des données dans la base",
+      "Gérer les droits et permissions des utilisateurs",
+      "Contrôler les transactions et validations des opérations"
+    ],
+    "answer": 0,
+    "theme": "SQL",
+    "explanation": "Le DDL comprend des commandes comme CREATE, ALTER et DROP, permettant de créer, modifier ou supprimer les objets de la base de données."
+  },
+  {
+    "ID": "SQL067",
+    "question": "Quel est le rôle principal du DML (Data Manipulation Language) en SQL ?",
+    "options": [
+      "Gérer les droits et permissions des utilisateurs",
+      "Créer et supprimer des tables dans la base de données",
+      "Insérer, mettre à jour, supprimer et récupérer des données dans les tables",
+      "Contrôler les transactions et validations des opérations"
+    ],
+    "answer": 1,
+    "theme": "SQL",
+    "explanation": "Le DML permet de manipuler les données existantes dans la base, via des commandes comme INSERT, UPDATE, DELETE et SELECT."
+  },
+  {
+    "ID": "SQL068",
+    "question": "Que signifie l’acronyme DDL en SQL ?",
+    "options": [
+      "Data Manipulation Language",
+      "Data Query Language",
+      "Data Definition Language",
+      "Data Control Language"
+    ],
+    "answer": 2,
+    "theme": "SQL",
+    "explanation": "DDL signifie Data Definition Language et regroupe les commandes SQL permettant de définir ou modifier la structure des objets de la base de données."
+  },
+  {
+    "ID": "SQL069",
+    "question": "Quel est le rôle principal du DCL (Data Control Language) en SQL ?",
+    "options": [
+      "Créer et modifier la structure des tables",
+      "Insérer, mettre à jour ou supprimer des données",
+      "Interroger les données avec SELECT",
+      "Gérer les droits et permissions des utilisateurs sur la base de données"
+    ],
+    "answer": 3,
+    "theme": "SQL",
+    "explanation": "Le DCL permet de gérer les privilèges et autorisations des utilisateurs, notamment avec les commandes GRANT et REVOKE."
+  },
+  {
+    "ID": "SQL070",
+    "question": "Quel est le rôle principal du TCL (Transaction Control Language) en SQL ?",
+    "options": [
+      "Créer et modifier les tables de la base",
+      "Gérer les droits des utilisateurs",
+      "Contrôler les transactions, notamment avec COMMIT et ROLLBACK",
+      "Interroger les données"
+    ],
+    "answer": 0,
+    "theme": "SQL",
+    "explanation": "Le TCL permet de gérer les transactions dans la base, en validant (COMMIT) ou annulant (ROLLBACK) les modifications effectuées."
+  },
+  {
+    "ID": "SQL071",
+    "question": "Qu'est-ce que MySQL ?",
+    "options": [
+      "Un langage de programmation pour créer des sites web",
+      "Un SGBDR (Système de Gestion de Bases de Données Relationnelles)",
+      "Un logiciel de traitement de texte",
+      "Un framework pour le développement d’applications mobiles"
+    ],
+    "answer": 1,
+    "theme": "SQL",
+    "explanation": "MySQL est un SGBDR open source très utilisé pour gérer des bases de données relationnelles et exécuter des requêtes SQL."
+  },
+  {
+    "ID": "SQL072",
+    "question": "À quoi sert la commande SQL CREATE DATABASE ?",
+    "options": [
+      "Supprimer une base de données existante",
+      "Ajouter une nouvelle table à une base existante",
+      "Créer une nouvelle base de données",
+      "Modifier les données d’une table"
+    ],
+    "answer": 2,
+    "theme": "SQL",
+    "explanation": "La commande CREATE DATABASE permet de créer une nouvelle base de données vide dans le SGBD."
+  },
+  {
+    "ID": "SQL073",
+    "question": "Qu’est-ce que MySQL Server ?",
+    "options": [
+      "Un langage de programmation pour manipuler des bases de données",
+      "Une interface graphique pour créer des sites web",
+      "Un outil pour sauvegarder uniquement les fichiers JSON",
+      "Le serveur de base de données qui stocke et gère les bases MySQL"
+    ],
+    "answer": 3,
+    "theme": "SQL",
+    "explanation": "MySQL Server est le serveur qui exécute MySQL, gère les bases de données, traite les requêtes SQL et assure l’accès aux données pour les utilisateurs et applications."
+  },
+  {
+    "ID": "SQL074",
+    "question": "Quelles sont trois commandes principales du langage DDL en SQL ?",
+    "options": [
+      "CREATE, ALTER, DROP",
+      "SELECT, INSERT, UPDATE",
+      "GRANT, REVOKE, COMMIT",
+      "ROLLBACK, SAVEPOINT, SET TRANSACTION"
+    ],
+    "answer": 0,
+    "theme": "SQL",
+    "explanation": "Les principales commandes DDL sont CREATE (créer un objet), ALTER (modifier un objet) et DROP (supprimer un objet) pour gérer la structure de la base de données."
+  },
+  {
+    "ID": "SQL075",
+    "question": "Quelle est l’importance de la convention de nommage des objets (tables, colonnes, clés) en SQL ?",
+    "options": [
+      "Accélérer automatiquement l’exécution des requêtes",
+      "Assurer la clarté, la lisibilité et éviter les conflits dans la base de données",
+      "Créer des relations plusieurs-à-plusieurs automatiquement",
+      "Limiter le nombre d’utilisateurs pouvant accéder à la base"
+    ],
+    "answer": 1,
+    "theme": "SQL",
+    "explanation": "Une bonne convention de nommage rend la structure de la base plus lisible, compréhensible et évite les erreurs ou collisions entre noms d’objets."
+  },
+  {
+    "ID": "SQL076",
+    "question": "Quelle commande SQL permet de vérifier l’existence d’une table avant de la créer ou la supprimer ?",
+    "options": [
+      "SHOW TABLES",
+      "DESCRIBE TABLE nom_table",
+      "CREATE TABLE IF NOT EXISTS / DROP TABLE IF EXISTS",
+      "SELECT * FROM information_schema"
+    ],
+    "answer": 2,
+    "theme": "SQL",
+    "explanation": "En SQL, on utilise 'CREATE TABLE IF NOT EXISTS' pour créer une table seulement si elle n’existe pas, et 'DROP TABLE IF EXISTS' pour la supprimer seulement si elle existe, évitant ainsi les erreurs."
+  },
+  {
+    "ID": "SQL077",
+    "question": "Que signifie le type de données INT en SQL ?",
+    "options": [
+      "Interval (intervalle de valeurs)",
+      "International",
+      "Interface",
+      "Integer (nombre entier)"
+    ],
+    "answer": 3,
+    "theme": "SQL",
+    "explanation": "INT est l’abréviation de Integer et sert à stocker des nombres entiers dans une colonne SQL."
+  },
+  {
+    "ID": "SQL078",
+    "question": "À quoi sert le type de données VARCHAR en SQL ?",
+    "options": [
+      "Stocker des chaînes de caractères de longueur variable",
+      "Stocker des nombres entiers",
+      "Stocker des nombres décimaux",
+      "Stocker des valeurs booléennes"
+    ],
+    "answer": 0,
+    "theme": "SQL",
+    "explanation": "Le type VARCHAR (Variable Character) permet de stocker des chaînes de caractères dont la longueur peut varier jusqu’à une limite spécifiée."
+  },
+  {
+    "ID": "SQL079",
+    "question": "À quoi sert le type de données TIMESTAMP en SQL ?",
+    "options": [
+      "Stocker uniquement la date sans l’heure",
+      "Stocker la date et l’heure avec un horodatage précis",
+      "Stocker des chaînes de caractères",
+      "Stocker des nombres décimaux"
+    ],
+    "answer": 1,
+    "theme": "SQL",
+    "explanation": "Le type TIMESTAMP est utilisé pour stocker des informations de date et d’heure, généralement pour enregistrer le moment exact d’un événement ou d’une modification dans la base."
+  },
+  {
+    "ID": "SQL080",
+    "question": "Quel est le rôle de la contrainte NOT NULL dans une table SQL ?",
+    "options": [
+      "Permettre l’insertion de valeurs dupliquées dans une colonne",
+      "Empêcher qu’une colonne contienne des valeurs nulles",
+      "Limiter le type de données d’une colonne à des nombres entiers",
+      "Autoriser uniquement des chaînes de caractères vides"
+    ],
+    "answer": 2,
+    "theme": "SQL",
+    "explanation": "La contrainte NOT NULL garantit qu’une colonne doit toujours contenir une valeur et qu’aucun enregistrement ne peut avoir une valeur NULL pour cette colonne."
+  },
+  {
+    "ID": "SQL081",
+    "question": "Comment distinguer une clé primaire (PRIMARY KEY) d’une clé étrangère (FOREIGN KEY) dans une table SQL ?",
+    "options": [
+      "La clé primaire peut contenir des valeurs NULL, la clé étrangère non",
+      "La clé étrangère identifie de manière unique chaque ligne, la clé primaire fait référence à une autre table",
+      "Il n’y a aucune différence, ce sont des synonymes",
+      "La clé primaire identifie de manière unique chaque ligne de sa propre table, la clé étrangère fait référence à la clé primaire d’une autre table"
+    ],
+    "answer": 3,
+    "theme": "SQL",
+    "explanation": "La clé primaire garantit l’unicité dans sa propre table tandis que la clé étrangère crée une relation avec la clé primaire d’une autre table, assurant l’intégrité référentielle."
+  },
+  {
+    "ID": "SQL082",
+    "question": "Quel est le rôle de l’option AUTO_INCREMENT dans une colonne SQL ?",
+    "options": [
+      "Attribuer automatiquement un numéro unique à chaque nouvel enregistrement",
+      "Permettre l’insertion de valeurs NULL dans une colonne",
+      "Stocker des chaînes de caractères de longueur variable",
+      "Créer une relation avec une autre table"
+    ],
+    "answer": 0,
+    "theme": "SQL",
+    "explanation": "AUTO_INCREMENT permet à une colonne, souvent une clé primaire, d’incrémenter automatiquement sa valeur à chaque nouvel enregistrement, garantissant l’unicité."
+  },
+  {
+    "ID": "SQL083",
+    "question": "Que signifie l’acronyme CRUD dans le contexte des bases de données ?",
+    "options": [
+      "Create, Remove, Update, Delete",
+      "Create, Read, Update, Delete",
+      "Copy, Read, Update, Delete",
+      "Create, Read, Undo, Drop"
+    ],
+    "answer": 1,
+    "theme": "SQL",
+    "explanation": "CRUD correspond aux quatre opérations fondamentales sur les données : Create (créer), Read (lire), Update (mettre à jour) et Delete (supprimer)."
+  },
+  {
+    "ID": "SQL084",
+    "question": "Quel est le rôle du mot-clé DISTINCT dans une requête SQL ?",
+    "options": [
+      "Compter le nombre total de lignes d’une table",
+      "Trier les résultats par ordre croissant",
+      "Éliminer les doublons et ne retourner que des valeurs uniques",
+      "Supprimer les lignes contenant des valeurs NULL"
+    ],
+    "answer": 2,
+    "theme": "SQL",
+    "explanation": "Le mot-clé DISTINCT permet de filtrer les résultats pour ne conserver que les valeurs uniques d’une ou plusieurs colonnes."
+  },
+  {
+    "ID": "SQL085",
+    "question": "Quel est le rôle des caractères génériques (wildcards) en SQL ?",
+    "options": [
+      "Remplacer automatiquement les valeurs NULL par zéro",
+      "Compter le nombre total de lignes dans une table",
+      "Définir le type de données d’une colonne",
+      "Permettre de rechercher des motifs spécifiques dans les chaînes de caractères"
+    ],
+    "answer": 3,
+    "theme": "SQL",
+    "explanation": "Les caractères génériques comme % et _ sont utilisés dans les requêtes avec LIKE pour rechercher des motifs précis dans les colonnes de type texte."
+  },
+  {
+    "ID": "SQL086",
+    "question": "Quel est le rôle de la clause OFFSET dans une requête SQL ?",
+    "options": [
+      "Ignorer un certain nombre de lignes avant de retourner les résultats",
+      "Limiter le nombre total de lignes dans une table",
+      "Supprimer les doublons dans les résultats",
+      "Trier les résultats par ordre alphabétique"
+    ],
+    "answer": 0,
+    "theme": "SQL",
+    "explanation": "La clause OFFSET permet de sauter un certain nombre de lignes dans les résultats d’une requête, souvent utilisée avec LIMIT pour la pagination."
+  },
+  {
+    "ID": "INF001",
+    "question": "Qu'est-ce qu'un système d'exploitation (SE) ?",
+    "options": [
+      "Un logiciel permettant uniquement de naviguer sur Internet",
+      "Un logiciel qui gère le matériel de l’ordinateur et fournit des services aux programmes",
+      "Un langage de programmation pour créer des applications",
+      "Un type de base de données"
+    ],
+    "answer": 1,
+    "theme": "Informatique",
+    "explanation": "Le système d’exploitation est un logiciel essentiel qui gère les ressources matérielles de l’ordinateur et fournit une interface et des services pour exécuter d’autres programmes."
+  },
+  {
+    "ID": "INF002",
+    "question": "Quel langage est principalement utilisé pour créer des pages web interactives ?",
+    "options": [
+      "Python",
+      "SQL",
+      "C++",
+      "JavaScript"
+    ],
+    "answer": 2,
+    "theme": "Informatique",
+    "explanation": "JavaScript est utilisé pour rendre les pages web interactives, en complément du HTML et du CSS."
+  },
+  {
+    "ID": "INF003",
+    "question": "Quel est le rôle d’un compilateur ?",
+    "options": [
+      "Exécuter directement un programme ligne par ligne",
+      "Créer une interface graphique",
+      "Stocker les données d’un programme",
+      "Traduire un programme écrit dans un langage en code exécutable par l’ordinateur"
+    ],
+    "answer": 3,
+    "theme": "Informatique",
+    "explanation": "Le compilateur transforme le code source écrit par le programmeur en code machine que l’ordinateur peut exécuter."
+  },
+  {
+    "ID": "INF004",
+    "question": "Qu’est-ce qu’un logiciel ?",
+    "options": [
+      "Un programme ou un ensemble de programmes permettant à l’ordinateur d’exécuter des tâches",
+      "Un composant matériel de l’ordinateur",
+      "Un périphérique de stockage externe",
+      "Une interface graphique uniquement"
+    ],
+    "answer": 0,
+    "theme": "Informatique",
+    "explanation": "Un logiciel est un programme ou un ensemble de programmes qui permettent à un ordinateur de réaliser des tâches spécifiques."
+  },
+  {
+    "ID": "INF005",
+    "question": "Qu’est-ce qu’un périphérique informatique ?",
+    "options": [
+      "Un logiciel de traitement de texte",
+      "Un composant matériel connecté à l’ordinateur pour entrer ou afficher des informations",
+      "Un langage de programmation",
+      "Une instruction dans un programme"
+    ],
+    "answer": 1,
+    "theme": "Informatique",
+    "explanation": "Les périphériques sont des composants matériels qui permettent d’interagir avec l’ordinateur, comme le clavier, la souris, l’écran ou l’imprimante."
+  },
+  {
+    "ID": "INF006",
+    "question": "Qu’est-ce que la mémoire RAM ?",
+    "options": [
+      "Un type de disque dur",
+      "Un logiciel antivirus",
+      "Une mémoire vive utilisée par l’ordinateur pour stocker temporairement les données et programmes en cours d’utilisation",
+      "Un périphérique d’impression"
+    ],
+    "answer": 2,
+    "theme": "Informatique",
+    "explanation": "La RAM (Random Access Memory) stocke temporairement les données utilisées par l’ordinateur pour permettre un accès rapide lors de l’exécution des programmes."
+  },
+  {
+    "ID": "INF007",
+    "question": "Qu’est-ce que la ROM (Read-Only Memory) dans un ordinateur ?",
+    "options": [
+      "Une mémoire vive utilisée temporairement par l’ordinateur",
+      "Un périphérique de stockage externe amovible",
+      "Un logiciel système",
+      "Une mémoire non volatile contenant des instructions permanentes, souvent pour le démarrage de l’ordinateur"
+    ],
+    "answer": 3,
+    "theme": "Informatique",
+    "explanation": "La ROM est une mémoire qui conserve ses données même lorsque l’ordinateur est éteint, stockant souvent le firmware ou le BIOS nécessaire au démarrage."
+  },
+  {
+    "ID": "GIT001",
+    "question": "Qu’est-ce que Git ?",
+    "options": [
+      "Un système de gestion de versions pour suivre les modifications dans le code",
+      "Un langage de programmation",
+      "Un type de serveur web",
+      "Un éditeur de texte"
+    ],
+    "answer": 0,
+    "theme": "GIT",
+    "explanation": "Git est un système de gestion de versions qui permet de suivre les modifications dans le code et de collaborer efficacement."
+  },
+  {
+    "ID": "GIT002",
+    "question": "Qu’est-ce que GitHub ?",
+    "options": [
+      "Un éditeur de code",
+      "Un service en ligne pour héberger des dépôts Git et collaborer sur des projets",
+      "Un système d’exploitation",
+      "Un type de commit"
+    ],
+    "answer": 1,
+    "theme": "GIT",
+    "explanation": "GitHub est une plateforme web qui permet d’héberger des dépôts Git et de collaborer sur des projets avec d’autres développeurs."
+  },
+  {
+    "ID": "GIT003",
+    "question": "Quelle commande crée un nouveau dépôt Git local ?",
+    "options": [
+      "git start",
+      "git create",
+      "git init",
+      "git new"
+    ],
+    "answer": 2,
+    "theme": "GIT",
+    "explanation": "`git init` initialise un nouveau dépôt Git dans le répertoire courant."
+  },
+  {
+    "ID": "GIT004",
+    "question": "Quelle commande ajoute des fichiers au suivi Git pour préparer un commit ?",
+    "options": [
+      "git merge",
+      "git push",
+      "git add",
+      "git commit"
+    ],
+    "answer": 3,
+    "theme": "GIT",
+    "explanation": "`git add` ajoute des fichiers à l’index pour les inclure dans le prochain commit."
+  },
+  {
+    "ID": "GIT005",
+    "question": "Quelle commande crée un nouveau commit avec un message ?",
+    "options": [
+      "git commit -m 'message'",
+      "git push -m 'message'",
+      "git save -m 'message'",
+      "git add -m 'message'"
+    ],
+    "answer": 0,
+    "theme": "GIT",
+    "explanation": "`git commit -m 'message'` enregistre les modifications ajoutées dans l’index avec un message descriptif."
+  },
+  {
+    "ID": "GIT006",
+    "question": "Quelle commande envoie les commits locaux vers le dépôt distant sur GitHub ?",
+    "options": [
+      "git clone",
+      "git push",
+      "git fetch",
+      "git pull"
+    ],
+    "answer": 1,
+    "theme": "GIT",
+    "explanation": "`git push` envoie les commits du dépôt local vers le dépôt distant pour les partager."
+  },
+  {
+    "ID": "GIT007",
+    "question": "Quelle commande récupère les modifications depuis le dépôt distant et les fusionne avec votre dépôt local ?",
+    "options": [
+      "git push",
+      "git fetch",
+      "git pull",
+      "git merge"
+    ],
+    "answer": 2,
+    "theme": "GIT",
+    "explanation": "`git pull` récupère les modifications depuis le dépôt distant et les fusionne automatiquement avec le dépôt local."
+  },
+  {
+    "ID": "GIT008",
+    "question": "Quelle commande permet de créer une nouvelle branche ?",
+    "options": [
+      "git checkout nom_de_branche",
+      "git init nom_de_branche",
+      "git merge nom_de_branche",
+      "git branch nom_de_branche"
+    ],
+    "answer": 3,
+    "theme": "GIT",
+    "explanation": "`git branch nom_de_branche` crée une nouvelle branche sans se déplacer dessus."
+  },
+  {
+    "ID": "GIT009",
+    "question": "Quelle commande permet de changer de branche ?",
+    "options": [
+      "git checkout nom_de_branche",
+      "git merge nom_de_branche",
+      "git branch nom_de_branche",
+      "git init nom_de_branche"
+    ],
+    "answer": 0,
+    "theme": "GIT",
+    "explanation": "`git checkout nom_de_branche` permet de basculer sur une autre branche existante."
+  },
+  {
+    "ID": "GIT010",
+    "question": "Quelle commande récupère une copie complète d’un dépôt distant ?",
+    "options": [
+      "git push",
+      "git clone",
+      "git pull",
+      "git fetch"
+    ],
+    "answer": 1,
+    "theme": "GIT",
+    "explanation": "`git clone` crée une copie complète d’un dépôt distant sur votre machine locale."
+  },
+  {
+    "ID": "GIT011",
+    "question": "Quelle commande permet de fusionner une branche dans la branche courante ?",
+    "options": [
+      "git branch",
+      "git checkout",
+      "git merge",
+      "git rebase"
+    ],
+    "answer": 2,
+    "theme": "GIT",
+    "explanation": "`git merge` fusionne une branche spécifiée dans la branche active."
+  },
+  {
+    "ID": "GIT012",
+    "question": "Quelle commande montre l’historique des commits d’un dépôt ?",
+    "options": [
+      "git status",
+      "git show",
+      "git history",
+      "git log"
+    ],
+    "answer": 3,
+    "theme": "GIT",
+    "explanation": "`git log` affiche l’historique des commits avec leurs messages et identifiants."
+  },
+  {
+    "ID": "GIT013",
+    "question": "Quelle commande permet de vérifier l’état des fichiers (modifiés, ajoutés ou non suivis) ?",
+    "options": [
+      "git status",
+      "git diff",
+      "git log",
+      "git check"
+    ],
+    "answer": 0,
+    "theme": "GIT",
+    "explanation": "`git status` montre l’état actuel des fichiers dans le dépôt local."
+  },
+  {
+    "ID": "GIT014",
+    "question": "Quelle commande récupère uniquement les mises à jour du dépôt distant sans les fusionner ?",
+    "options": [
+      "git pull",
+      "git fetch",
+      "git push",
+      "git merge"
+    ],
+    "answer": 1,
+    "theme": "GIT",
+    "explanation": "`git fetch` récupère les branches et les commits du dépôt distant sans les fusionner automatiquement."
+  },
+  {
+    "ID": "GIT015",
+    "question": "Quelle commande supprime une branche localement ?",
+    "options": [
+      "git delete branch",
+      "git remove branch nom_de_branche",
+      "git branch -d nom_de_branche",
+      "git drop nom_de_branche"
+    ],
+    "answer": 2,
+    "theme": "GIT",
+    "explanation": "`git branch -d nom_de_branche` supprime une branche locale qui a été fusionnée."
+  },
+  {
+    "ID": "GIT016",
+    "question": "Quelle commande permet de renommer une branche locale ?",
+    "options": [
+      "git rename branch ancien_nom nouveau_nom",
+      "git branch --rename ancien_nom nouveau_nom",
+      "git mv branch ancien_nom nouveau_nom",
+      "git branch -m ancien_nom nouveau_nom"
+    ],
+    "answer": 3,
+    "theme": "GIT",
+    "explanation": "`git branch -m ancien_nom nouveau_nom` renomme une branche locale."
+  },
+  {
+    "ID": "GIT017",
+    "question": "Quelle commande annule les modifications non commités dans un fichier ?",
+    "options": [
+      "git checkout -- fichier",
+      "git revert fichier",
+      "git reset fichier",
+      "git undo fichier"
+    ],
+    "answer": 0,
+    "theme": "GIT",
+    "explanation": "`git checkout -- fichier` restaure le fichier à sa dernière version commitée."
+  },
+  {
+    "ID": "GIT018",
+    "question": "Quelle commande affiche les différences entre fichiers modifiés et dernière version commitée ?",
+    "options": [
+      "git status",
+      "git diff",
+      "git log",
+      "git show"
+    ],
+    "answer": 1,
+    "theme": "GIT",
+    "explanation": "`git diff` montre les modifications ligne par ligne avant de les commit."
+  },
+  {
+    "ID": "GIT019",
+    "question": "Quelle commande permet de supprimer un fichier du suivi Git mais pas du disque ?",
+    "options": [
+      "git rm fichier",
+      "git delete fichier",
+      "git rm --cached fichier",
+      "git remove fichier"
+    ],
+    "answer": 2,
+    "theme": "GIT",
+    "explanation": "`git rm --cached fichier` supprime le fichier de l’index Git mais le conserve sur le disque."
+  },
+  {
+    "ID": "GIT020",
+    "question": "Quelle commande permet de créer un dépôt distant sur GitHub à partir d’un dépôt local ?",
+    "options": [
+      "git push origin master",
+      "git init",
+      "git clone URL",
+      "git remote add origin URL"
+    ],
+    "answer": 3,
+    "theme": "GIT",
+    "explanation": "`git remote add origin URL` configure un dépôt distant nommé 'origin' pour le dépôt local."
+  },
+  {
+    "ID": "GIT021",
+    "question": "Qui a créé Git ?",
+    "options": [
+      "Linus Torvalds",
+      "Bill Gates",
+      "Steve Jobs",
+      "Johnny Begood"
+    ],
+    "answer": 0,
+    "theme": "GIT",
+    "explanation": "Git a été créé par Linus Torvalds en 2005 pour gérer le développement du noyau Linux."
+  },
+  {
+    "ID": "GIT022",
+    "question": "Quelle commande Bash permet de vérifier le chemin du répertoire courant avant d’exécuter des commandes Git ?",
+    "options": [
+      "ls",
+      "pwd",
+      "cd",
+      "git status"
+    ],
+    "answer": 1,
+    "theme": "GIT",
+    "explanation": "`pwd` (print working directory) affiche le chemin complet du répertoire courant, utile avant d’exécuter des commandes Git."
+  },
+  {
+    "ID": "GIT023",
+    "question": "Quelle commande Bash permet de lister les fichiers et dossiers dans le répertoire courant ?",
+    "options": [
+      "cd",
+      "pwd",
+      "ls",
+      "mkdir"
+    ],
+    "answer": 2,
+    "theme": "GIT",
+    "explanation": "`ls` affiche le contenu du répertoire courant, utile pour voir les fichiers d’un projet Git."
+  },
+  {
+    "ID": "GIT024",
+    "question": "Quelle commande Bash déplace ou renomme un fichier dans un projet Git ?",
+    "options": [
+      "cp",
+      "rm",
+      "git add",
+      "mv"
+    ],
+    "answer": 3,
+    "theme": "GIT",
+    "explanation": "`mv source destination` permet de déplacer ou renommer un fichier ou dossier dans le terminal."
+  },
+  {
+    "ID": "GIT025",
+    "question": "Quelle commande Bash crée un nouveau fichier vide dans le répertoire courant ?",
+    "options": [
+      "touch",
+      "mkdir",
+      "nano",
+      "rm"
+    ],
+    "answer": 0,
+    "theme": "GIT",
+    "explanation": "`touch nom_fichier` crée un fichier vide ou met à jour la date d’un fichier existant."
+  },
+  {
+    "ID": "GIT026",
+    "question": "Quelle commande Bash copie un fichier vers un autre emplacement ?",
+    "options": [
+      "mv",
+      "cp",
+      "rm",
+      "git add"
+    ],
+    "answer": 1,
+    "theme": "GIT",
+    "explanation": "`cp source destination` copie un fichier ou dossier vers un nouvel emplacement."
+  },
+  {
+    "ID": "GIT027",
+    "question": "Quelle commande Git affiche toutes les configurations actuelles ?",
+    "options": [
+      "git config --show",
+      "git config --get-all",
+      "git config --list",
+      "git show-config"
+    ],
+    "answer": 2,
+    "theme": "GIT",
+    "explanation": "`git config --list` affiche toutes les configurations globales et locales de Git."
+  },
+  {
+    "ID": "GIT028",
+    "question": "Qu’est-ce que Nano ?",
+    "options": [
+      "Un système de gestion de versions",
+      "Un langage de programmation",
+      "Un type de commit Git",
+      "Un éditeur de texte en terminal"
+    ],
+    "answer": 3,
+    "theme": "GIT",
+    "explanation": "Nano est un éditeur de texte simple utilisé dans le terminal pour écrire ou modifier des fichiers, y compris les messages de commit Git."
+  },
+  {
+    "ID": "GIT029",
+    "question": "Qu’est-ce que Vim ?",
+    "options": [
+      "Un éditeur de texte avancé en terminal",
+      "Un système de gestion de versions",
+      "Un langage de programmation",
+      "Un type de commit Git"
+    ],
+    "answer": 0,
+    "theme": "GIT",
+    "explanation": "Vim est un éditeur de texte puissant et avancé utilisé dans le terminal pour éditer des fichiers, y compris les messages de commit Git."
+  },
+  {
+    "ID": "GIT030",
+    "question": "À quoi sert la commande `git help` ?",
+    "options": [
+      "Afficher l’historique des commits",
+      "Afficher l’aide et la documentation des commandes Git",
+      "Ajouter un fichier à l’index",
+      "Initialiser un dépôt Git"
+    ],
+    "answer": 1,
+    "theme": "GIT",
+    "explanation": "`git help` fournit la documentation et l’aide pour toutes les commandes Git ou pour une commande spécifique."
+  },
+  {
+    "ID": "GIT031",
+    "question": "Qu’est-ce qu’un dépôt (repository) Git ?",
+    "options": [
+      "Un fichier unique contenant tout le code",
+      "Une branche spécifique d’un projet",
+      "Un dossier contenant tous les fichiers, l’historique des commits et la configuration Git",
+      "Un type de commit"
+    ],
+    "answer": 2,
+    "theme": "GIT",
+    "explanation": "Un dépôt Git contient tous les fichiers du projet, l’historique des commits, les branches et la configuration du projet."
+  },
+  {
+    "ID": "GIT032",
+    "question": "Quelle commande crée un nouveau dépôt Git local dans le répertoire courant ?",
+    "options": [
+      "git clone",
+      "git commit",
+      "git push",
+      "git init"
+    ],
+    "answer": 3,
+    "theme": "GIT",
+    "explanation": "`git init` initialise un dépôt Git vide dans le répertoire courant."
+  },
+  {
+    "ID": "GIT033",
+    "question": "Quelle commande permet de récupérer un dépôt distant sur votre machine locale ?",
+    "options": [
+      "git clone",
+      "git fetch",
+      "git pull",
+      "git push"
+    ],
+    "answer": 0,
+    "theme": "GIT",
+    "explanation": "`git clone URL` crée une copie complète d’un dépôt distant sur votre machine locale."
+  },
+  {
+    "ID": "GIT034",
+    "question": "Quelle commande permet de lister toutes les branches locales d’un dépôt ?",
+    "options": [
+      "git checkout",
+      "git branch",
+      "git merge",
+      "git log"
+    ],
+    "answer": 1,
+    "theme": "GIT",
+    "explanation": "`git branch` sans argument liste toutes les branches locales du dépôt."
+  },
+  {
+    "ID": "GIT035",
+    "question": "Quelle commande permet de supprimer un dépôt local (attention, irréversible) ?",
+    "options": [
+      "git delete repo",
+      "git rm repository",
+      "rm -rf nom_dossier",
+      "git clear"
+    ],
+    "answer": 2,
+    "theme": "GIT",
+    "explanation": "Pour supprimer complètement un dépôt local, il faut supprimer le dossier contenant le dépôt avec `rm -rf` (Linux/Mac) ou `rmdir /s` sur Windows."
+  },
+  {
+    "ID": "GIT036",
+    "question": "À quoi sert la commande `git revert` ?",
+    "options": [
+      "Supprimer un fichier du dépôt",
+      "Supprimer toute l’historique d’un dépôt",
+      "Fusionner deux branches",
+      "Annuler un commit en créant un nouveau commit qui inverse les modifications"
+    ],
+    "answer": 3,
+    "theme": "GIT",
+    "explanation": "`git revert <commit>` crée un nouveau commit qui annule les modifications d’un commit précédent, sans supprimer l’historique."
+  },
+  {
+    "ID": "GIT037",
+    "question": "Quel langage est utilisé pour exécuter des commandes Git dans le terminal ?",
+    "options": [
+      "Bash (ou shell)",
+      "Python",
+      "Java",
+      "C++"
+    ],
+    "answer": 0,
+    "theme": "GIT",
+    "explanation": "Git s’utilise principalement via un terminal (Bash ou shell) en exécutant des commandes, mais Git lui-même est écrit en C."
+  },
+  {
+    "ID": "GIT038",
+    "question": "À quoi sert la commande `git tag` ?",
+    "options": [
+      "Créer des branches",
+      "Marquer des points spécifiques dans l’historique comme des versions",
+      "Supprimer des commits",
+      "Fusionner des branches"
+    ],
+    "answer": 1,
+    "theme": "GIT",
+    "explanation": "`git tag` est utilisé pour marquer des commits spécifiques dans l’historique, souvent pour indiquer des versions ou releases."
+  },
+  {
+    "ID": "GIT039",
+    "question": "Quelle commande crée un tag annoté avec un message ?",
+    "options": [
+      "git tag v1.0",
+      "git create tag v1.0",
+      "git tag -a v1.0 -m 'Version 1.0'",
+      "git tag --delete v1.0"
+    ],
+    "answer": 2,
+    "theme": "GIT",
+    "explanation": "`git tag -a v1.0 -m 'Version 1.0'` crée un tag annoté avec un message descriptif."
+  },
+  {
+    "ID": "GIT040",
+    "question": "Comment lister tous les tags d’un dépôt Git ?",
+    "options": [
+      "git show tags",
+      "git tag",
+      "git tag --list",
+      "git list tags"
+    ],
+    "answer": 2,
+    "theme": "GIT",
+    "explanation": "`git tag --list` affiche tous les tags existants dans le dépôt."
+  },
+  {
+    "ID": "GIT041",
+    "question": "Comment supprimer un tag local dans Git ?",
+    "options": [
+      "git tag -d v1.0",
+      "git remove tag v1.0",
+      "git delete v1.0",
+      "git reset tag v1.0"
+    ],
+    "answer": 0,
+    "theme": "GIT",
+    "explanation": "`git tag -d v1.0` supprime le tag local nommé v1.0."
+  }
+]
