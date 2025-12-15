@@ -268,7 +268,7 @@
       "Une boucle spéciale",
       "Une fonction récursive"
     ],
-    "answer": 0,
+    "answer": 1,
     "theme": "Algorithme",
     "explanation": "Un type de donnée définit si une variable contient un nombre, un texte, un booléen, etc."
   },
