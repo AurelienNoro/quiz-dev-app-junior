@@ -2166,7 +2166,7 @@
       "Limiter le type de données d’une colonne à des nombres entiers",
       "Autoriser uniquement des chaînes de caractères vides"
     ],
-    "answer": 2,
+    "answer": 1,
     "theme": "SQL",
     "explanation": "La contrainte NOT NULL garantit qu’une colonne doit toujours contenir une valeur et qu’aucun enregistrement ne peut avoir une valeur NULL pour cette colonne."
   },
