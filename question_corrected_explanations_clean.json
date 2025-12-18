@@ -641,7 +641,7 @@
     "question": "Comment incrémenter une variable x de 1 ?",
     "options": [
       "x += 2;",
-      "x = x + 1;",
+      "x++",
       "x++;--",
       "x =+ 1;"
     ],
@@ -832,19 +832,6 @@
     "explanation": "La boucle do...while exécute toujours le bloc au moins une fois avant de tester la condition."
   },
   {
-    "ID": "JS026",
-    "question": "Comment supprimer une propriété 'nom' d’un objet obj ?",
-    "options": [
-      "delete obj.nom;",
-      "obj.remove('nom');",
-      "obj.pop('nom');",
-      "remove obj.nom;"
-    ],
-    "answer": 0,
-    "theme": "JavaScript",
-    "explanation": "L’instruction delete supprime une propriété d’un objet."
-  },
-  {
     "ID": "JS027",
     "question": "Comment créer une fonction qui prend un paramètre x et retourne x*2 ?",
     "options": [
@@ -989,7 +976,7 @@
   },
   {
     "ID": "JS038",
-    "question": "Comment appelle-t-on un bloc de code réutilisable ?",
+    "question": "Comment appelle-t-on un bloc de code qui peut-étre appelé plusieurs fois ?",
     "options": [
       "Fonction",
       "Objet",
@@ -1056,15 +1043,15 @@
     "ID": "JS043",
     "question": "Quel type de données représente un nombre entier ou décimal ?",
     "options": [
-      "Chaîne",
-      "Nombre",
-      "Booléen",
-      "Objet"
+      "String",
+      "Number",
+      "Boolean",
+      "Object"
     ],
     "answer": 1,
     "theme": "JavaScript",
-    "explanation": "Le type nombre (Number) représente un entier ou un nombre à virgule."
-  },
+    "explanation": "En JavaScript, le type 'Number' permet de représenter aussi bien les nombres entiers que les nombres décimaux."
+  }
   {
     "ID": "JS044",
     "question": "Quel mot-clé permet de déclarer une variable qui peut changer de valeur ?",
@@ -1134,10 +1121,10 @@
     "ID": "JS049",
     "question": "Quel type de données représente du texte ?",
     "options": [
-      "Nombre",
-      "Booléen",
-      "Objet",
-      "Chaîne"
+      "Number",
+      "Boolean",
+      "Object",
+      "String"
     ],
     "answer": 3,
     "theme": "JavaScript",
@@ -1927,7 +1914,7 @@
     "ID": "SQL062",
     "question": "Quel est le rôle d’une table d’association dans une base de données SQL ?",
     "options": [
-      "Relier deux tables dans une relation plusieurs-à-plusieurs",
+      "Relier deux tables dans une relation plusieurs-à-plusieurs (Many To Many)",
       "Stocker uniquement des valeurs numériques pour les calculs",
       "Remplacer la clé primaire d’une table principale",
       "Afficher graphiquement les relations entre les données"
@@ -2028,19 +2015,6 @@
     "explanation": "Le DCL permet de gérer les privilèges et autorisations des utilisateurs, notamment avec les commandes GRANT et REVOKE."
   },
   {
-    "ID": "SQL070",
-    "question": "Quel est le rôle principal du TCL (Transaction Control Language) en SQL ?",
-    "options": [
-      "Créer et modifier les tables de la base",
-      "Gérer les droits des utilisateurs",
-      "Contrôler les transactions, notamment avec COMMIT et ROLLBACK",
-      "Interroger les données"
-    ],
-    "answer": 0,
-    "theme": "SQL",
-    "explanation": "Le TCL permet de gérer les transactions dans la base, en validant (COMMIT) ou annulant (ROLLBACK) les modifications effectuées."
-  },
-  {
     "ID": "SQL071",
     "question": "Qu'est-ce que MySQL ?",
     "options": [
@@ -2081,7 +2055,7 @@
   },
   {
     "ID": "SQL074",
-    "question": "Quelles sont trois commandes principales du langage DDL en SQL ?",
+    "question": "Quelles sont trois commandes principales du langage DDL (Data Definition Language) en SQL ?",
     "options": [
       "CREATE, ALTER, DROP",
       "SELECT, INSERT, UPDATE",
@@ -2176,7 +2150,7 @@
     "options": [
       "La clé primaire peut contenir des valeurs NULL, la clé étrangère non",
       "La clé étrangère identifie de manière unique chaque ligne, la clé primaire fait référence à une autre table",
-      "Il n’y a aucune différence, ce sont des synonymes",
+      "Il n’y a aucune différence",
       "La clé primaire identifie de manière unique chaque ligne de sa propre table, la clé étrangère fait référence à la clé primaire d’une autre table"
     ],
     "answer": 3,
@@ -2208,45 +2182,6 @@
     "answer": 1,
     "theme": "SQL",
     "explanation": "CRUD correspond aux quatre opérations fondamentales sur les données : Create (créer), Read (lire), Update (mettre à jour) et Delete (supprimer)."
-  },
-  {
-    "ID": "SQL084",
-    "question": "Quel est le rôle du mot-clé DISTINCT dans une requête SQL ?",
-    "options": [
-      "Compter le nombre total de lignes d’une table",
-      "Trier les résultats par ordre croissant",
-      "Éliminer les doublons et ne retourner que des valeurs uniques",
-      "Supprimer les lignes contenant des valeurs NULL"
-    ],
-    "answer": 2,
-    "theme": "SQL",
-    "explanation": "Le mot-clé DISTINCT permet de filtrer les résultats pour ne conserver que les valeurs uniques d’une ou plusieurs colonnes."
-  },
-  {
-    "ID": "SQL085",
-    "question": "Quel est le rôle des caractères génériques (wildcards) en SQL ?",
-    "options": [
-      "Remplacer automatiquement les valeurs NULL par zéro",
-      "Compter le nombre total de lignes dans une table",
-      "Définir le type de données d’une colonne",
-      "Permettre de rechercher des motifs spécifiques dans les chaînes de caractères"
-    ],
-    "answer": 3,
-    "theme": "SQL",
-    "explanation": "Les caractères génériques comme % et _ sont utilisés dans les requêtes avec LIKE pour rechercher des motifs précis dans les colonnes de type texte."
-  },
-  {
-    "ID": "SQL086",
-    "question": "Quel est le rôle de la clause OFFSET dans une requête SQL ?",
-    "options": [
-      "Ignorer un certain nombre de lignes avant de retourner les résultats",
-      "Limiter le nombre total de lignes dans une table",
-      "Supprimer les doublons dans les résultats",
-      "Trier les résultats par ordre alphabétique"
-    ],
-    "answer": 0,
-    "theme": "SQL",
-    "explanation": "La clause OFFSET permet de sauter un certain nombre de lignes dans les résultats d’une requête, souvent utilisée avec LIMIT pour la pagination."
   },
   {
     "ID": "INF001",
@@ -2741,19 +2676,6 @@
     "answer": 2,
     "theme": "GIT",
     "explanation": "Un dépôt Git contient tous les fichiers du projet, l’historique des commits, les branches et la configuration du projet."
-  },
-  {
-    "ID": "GIT032",
-    "question": "Quelle commande crée un nouveau dépôt Git local dans le répertoire courant ?",
-    "options": [
-      "git clone",
-      "git commit",
-      "git push",
-      "git init"
-    ],
-    "answer": 3,
-    "theme": "GIT",
-    "explanation": "`git init` initialise un dépôt Git vide dans le répertoire courant."
   },
   {
     "ID": "GIT033",
